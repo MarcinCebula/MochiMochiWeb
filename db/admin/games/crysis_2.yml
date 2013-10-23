@@ -1,0 +1,24 @@
+game: 
+  title: |-
+    Crysis 2
+  pc:
+    title: |-
+      Crysis 2
+    cover: https://s3.amazonaws.com/AceGmr/v2/games/crysis_2/Crysis_2_PC.jpg
+    price: 5999
+    genre: [First-Person, Shooter]
+    modes: [Single-Player, Multi-Player]
+  ps3:
+    title: |-
+      Crysis 2
+    cover: https://s3.amazonaws.com/AceGmr/v2/games/crysis_2/Crysis_2_PS3.jpg
+    price: 5999
+    genre: [First-Person, Shooter]
+    modes: [Single-Player, Multi-Player]
+  xbox360:
+    title: |-
+      Crysis 2
+    cover: https://s3.amazonaws.com/AceGmr/v2/games/crysis_2/Crysis_2_Xbox360.jpg
+    price: 5999
+    genre: [First-Person, Shooter]
+    modes: [Single-Player, Multi-Player]

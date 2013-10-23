@@ -1,0 +1,12 @@
+Top Menu can be used for displaying best deals, user deals (this can be an easy form with just text and link, favorited, response
+Ones that are easy to implement now: deals, user ideas, favorited
+
+Left menu
+Games deals with consoles, Hadware deals with parts
+
+
+Storage
+Data, Deals
+deals,
+
+  

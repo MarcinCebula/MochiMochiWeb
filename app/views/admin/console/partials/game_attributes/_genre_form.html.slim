@@ -1,0 +1,46 @@
+- checkbox_status = disable_checkbox rescue false
+
+div class="span8"
+
+  lable class="checkbox inline span2" style="margin-left:10px;"
+    = check_box_tag 'genre[action]','', genre.action, :disabled => checkbox_status
+    | Action
+  lable class="checkbox inline span2"
+    = check_box_tag 'genre[adventure]', '', genre.adventure, :disabled => checkbox_status
+    | Adventure
+  lable class="checkbox inline span2"
+    = check_box_tag 'genre[educational]', '', genre.educational, :disabled => checkbox_status
+    | Educational
+  lable class="checkbox inline span2"
+    = check_box_tag 'genre[fighting]', '', genre.fighting, :disabled => checkbox_status
+    | Fighting
+  lable class="checkbox inline span2"
+    = check_box_tag 'genre[first_person]', '', genre.first_person, :disabled => checkbox_status
+    | First Person
+  lable class="checkbox inline span2"
+    = check_box_tag 'genre[mmo]', '', genre.mmo, :disabled => checkbox_status
+    | MMO
+  lable class="checkbox inline span2"
+    = check_box_tag 'genre[puzzle]', '', genre.puzzle, :disabled => checkbox_status
+    | Puzzle
+  lable class="checkbox inline span2"
+    = check_box_tag 'genre[racing]', '', genre.racing, :disabled => checkbox_status
+    | Racing
+  lable class="checkbox inline span2"
+    = check_box_tag 'genre[role_playing]', '', genre.role_playing, :disabled => checkbox_status
+    | Role Playing
+  lable class="checkbox inline span2"
+    = check_box_tag 'genre[shooter]', '', genre.shooter, :disabled => checkbox_status
+    | Shooter
+  lable class="checkbox inline span2"
+    = check_box_tag 'genre[simulation]', '', genre.simulation, :disabled => checkbox_status
+    | Simulation
+  lable class="checkbox inline span2"
+    = check_box_tag 'genre[sports]', '', genre.sports, :disabled => checkbox_status
+    | Sports
+  lable class="checkbox inline span2"
+    = check_box_tag 'genre[strategy]', '', genre.strategy, :disabled => checkbox_status
+    | Strategy
+  lable class="checkbox inline span2"
+    = check_box_tag 'genre[third_person]', '', genre.third_person, :disabled => checkbox_status
+    | Third Person

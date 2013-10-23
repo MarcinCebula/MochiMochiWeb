@@ -1,0 +1,58 @@
+$Turquoise: #1abc9c
+$Greensea: #16a085
+
+$Emerland: #2ecc71
+$Nephritis: #27ae60
+
+$Peterriver: #3498db
+$Belizehole: #2980b9
+
+$Amethyst: #9b59b6
+$Wisteria: #8e44ad
+
+$Wetasphalt: #34495e
+$Midnightblue: #2c3e50
+
+$Sunflower: #f1c40f
+$Orange: #f39c12
+
+$Carrot: #e67e22
+$Pumpkin: #d35400
+
+$Alizarin: #e74c3c
+$Pomegranate: #c0392b
+
+$Clouds: #ecf0f1
+$Silver: #bdc3c7
+
+$Concrete: #95a5a6
+$Asbestos: #7f8c8d
+
+
+
+$NonActiveColor1: $Wetasphalt
+$ActiveColor1: $Turquoise
+
+$NavHeight: 51px
+
+@mixin navigation-element-active-state($pPaddingBottom)
+  border-bottom: none
+  padding: 12px 28px $pPaddingBottom 32px
+  margin: 2px 0px 0px 0px
+    border-bottom: 2px solid $NonActiveColor1
+  &:hover
+    border-bottom: 2px solid $ActiveColor1
+
+
+.navbarZZZ
+  .navbar-inner
+    height: $NavHeight
+    +border-corner-radius(top, left, 0px)
+    +border-corner-radius(top, right, 0px)
+
+    .brand
+      +navigation-element-active-state(14px)
+    ul.nav
+      li
+        a
+          +navigation-element-active-state(15px)

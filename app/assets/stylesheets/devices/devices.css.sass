@@ -1,0 +1,402 @@
+@import compass/css3/images
+@import compass/css3
+
+$ps3-ratio: 1.1517
+
+$deal-padding-width: 5
+$deal-border-width: 1
+$deal-margin-bottom: 20
+$deal-padding: 5
+$deals-margins: 5
+$default-border-radius: 4px
+
+
+@function full-deal-width($width, $margin)
+  $result: ($width * 2) + ($deal-border-width * 2)
+  @return $result + $margin
+@function cover-width($width)
+  $result: $width - (($deal-border-width + $deal-padding-width) * 2)
+  @return $result
+@function cover-height($width)
+  @return $width * $ps3-ratio
+@function deal-margin-left($deals-width, $deals, $deal-width)
+  $margins: $deals - 1
+  /* $extra-width: ($deal-border-width + $deal-padding-width) * 2
+  $true-container-width: ($deals-width - ($deals-margins * 2))
+  $total-deals-width: (($deal-width + 2) * $deals)
+  @return  ($true-container-width - $total-deals-width)/ $margins
+
+
+
+
+=index-page($resource)
+  #body
+    #navigation-container
+      div.row-fluid
+        #sub-category
+          ul.nav
+            padding-bottom: 10px
+            border-bottom: 1px solid #DDDDDD
+    #{$resource}-container
+      margin-left: 0px
+      @content
+=specific-deal
+  .specific-deal-container
+    margin-left: 0px !important
+  .specific-deal-container > .well
+    padding: 0px
+    padding-top: 10px
+    padding-bottom: 10px
+  .specific-deal-container.expired
+    background-color: blue
+  .specific-deal-container > .well  .thumbnail
+    background-color: white
+  .specific-deal-containe > .well  .thumbnail .description
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+
+  .specific-deal-containe .well .price-links
+    margin-top: 20px
+  .specific-deal-containe .well .deal-original-price
+    color: red
+    font-family: Arial
+    font-size: 30px
+    font-weight: bold
+    color: #49494a
+    padding: 5px
+  .specific-deal-containe .thumbnail .deal-discount
+    font-size: 20px
+    color: orange
+  .specific-deal-containe .thumbnail .deal-price
+    font-size: 30px
+    color: green
+
+
+=deals($width, $margins)
+  $width-px: #{$width}px
+  $margins-px: #{$margins}px
+  ul.deals
+    display: inline-block
+    width: $width-px
+    margin-left: $margins-px
+    margin-right: $margins-px
+    @content
+=deal($deals-width-raw, $width-raw, $deals, $margin-bottom-raw)
+  $deals-width: #{$deals-width-raw}px
+  $width: #{$width-raw}px
+  $margin-bottom: #{$margin-bottom-raw}px
+  div.deal
+    cursor: pointer
+    position: relative
+    width: $width
+    float: left
+    margin-left: #{deal-margin-left($deals-width-raw, $deals, $width-raw)}px
+    margin-bottom: $margin-bottom
+    &:nth-child(#{$deals}n + 1)
+      clear: left
+      margin-left: 0px
+    div.deal-container
+      padding: #{$deal-padding}px
+      width: auto
+      height: auto
+    img.cover
+      width: #{cover-width($width-raw)}px
+    div.caption
+      color: #08C
+      padding: 5px
+      height: 40px
+      font-weight: 500
+    @content
+
+=full-deal($width, $height)
+  $width-px: #{$width}px !important
+  $height-px: #{$height}px !important
+  div.full-deal
+    +border-radius
+    top: -2px
+    left: -2px
+    padding: 0px !important
+    position: absolute
+    height: $height-px
+    width: $width-px
+    background-color: #FFFFFF
+    border: 1px solid #CECECE
+    z-index: 999
+    code
+      font-size: 14px
+      font-weight: 700
+    .minimize-deal
+      position: absolute
+      right: 10px
+      bottom: 10px
+    .deal-price
+      position: absolute
+      top: 40px
+      left: 10px
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+      color: #333
+    .get-deal
+      position: absolute
+      top: 65px
+      right: 10px
+    .deal-description
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+      position: absolute
+      top: 110px
+      left: 10px
+      font-size: 14px
+      line-height: 20px
+      color: #333
+      overflow: hidden
+    div.header-container
+      +border-top-left-radius(4px)
+      +border-top-right-radius(4px)
+      +background-image(linear-gradient(top, #08C, #04C))
+      +background-image(-webkit-linear-gradient(top, white, #E6E6E6))
+      +background-image(-o-linear-gradient(top, white, #E6E6E6))
+      +background-image(linear-gradient(to bottom, white, #E6E6E6))
+      background-repeat: repeat-x
+      top: 0px
+      width: inherit
+      height: 45px
+      border-bottom: 1px solid #CCC
+      div.title
+        margin-top: 13px
+        font-weight: 600
+        color: #555
+        left: 10px
+        position: relative
+        overflow: hidden
+        height: 51px
+        width:  #{$width - 70}px
+        display: inline-block
+      div.likes-button-container
+        padding-top: 13px
+        text-align: center
+        color: white
+        font-weight: 600
+        font-size: 15px
+        float: right
+        height: 33px
+        width: 60px
+        display: inline-block
+        border-left: 1px solid #CCC
+        background-color: #da4f49
+        +border-top-right-radius(3px)
+        +background-image(linear-gradient(top, #ee5f5b, #bd362f))
+        +background-image(-webkit-linear-gradient(top, #ee5f5b, #bd362f))
+        +background-image(-o-linear-gradient(top, #ee5f5b, #bd362f))
+        +background-image(linear-gradient(to bottom, #ee5f5b, #bd362f))
+        background-repeat: repeat-x
+        i.icon-tag
+          margin-top: 2px
+        &:hover
+          +background-image(linear-gradient(top, #ee5f5b, #802420))
+          +background-image(-webkit-linear-gradient(top, #ee5f5b, #802420))
+          +background-image(-o-linear-gradient(top, #ee5f5b, #802420))
+          +background-image(linear-gradient(to bottom, #ee5f5b, #802420))
+
+    div.deal-nav-container
+      +border-bottom-left-radius(4px)
+      +border-bottom-right-radius(4px)
+      +background-image(linear-gradient(top, #08C, #04C))
+      +background-image(-webkit-linear-gradient(top, white, #E6E6E6))
+      +background-image(-o-linear-gradient(top, white, #E6E6E6))
+      +background-image(linear-gradient(to bottom, white, #E6E6E6))
+      background-repeat: repeat-x
+      position: absolute
+      bottom: 0px
+      width: 100%
+      height: 40px
+      border-top: 1px solid #CCC
+      div.get-deal-container
+        float: left
+        height: 22px
+        padding: 9px
+        border-bottom: 1px solid #DDDDDD
+        border-right: 1px solid #CCCCCC
+        cursor: pointer
+        font-weight: 600
+        color: #FFFFFF
+        background-color: #51a351
+        +border-bottom-left-radius(3px)
+        +background-image(linear-gradient(top, #62c462, #51a351))
+        +background-image(-webkit-linear-gradient(top, #62c462, #51a351))
+        +background-image(-o-linear-gradient(top, #62c462, #51a351))
+        +background-image(linear-gradient(to bottom, #62c462, #51a351))
+        background-repeat: repeat-x
+        i.icon-tag
+          margin-top: 2px
+        &:hover
+          height: 22px
+          +background-image(linear-gradient(top, #51a351, #5bb65b))
+          +background-image(-webkit-linear-gradient(top, #51a351, #5bb65b))
+          +background-image(-o-linear-gradient(top, #51a351, #5bb65b))
+          +background-image(linear-gradient(to bottom, #51a351, #5bb65b))
+      div.deal-nav-container
+        float: left
+      div.fullscreen-icon-container
+        float: right
+        height: inherit
+        width: 50px
+        border-left: 1px solid #CCCCCC
+        cursor: pointer
+        &:hover
+          +background-image(linear-gradient(top, #08C, #04C))
+          +background-image(-webkit-linear-gradient(top, #E6E6E6, #CCCCCC))
+          +background-image(-o-linear-gradient(top, #E6E6E6, #CCCCCC))
+          +background-image(linear-gradient(to bottom, #E6E6E6, #CCCCCC))
+        span.icon-resize-small
+          margin-left: 17px
+          margin-top: 10px
+      div.deal-title
+        text-align: left
+        float: left
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis !important
+        position: absolute
+        left: 15px
+        top: 15px
+        font-size: 18px
+        font-weight: 700
+        color: #0A2
+    .line-height-larger
+      line-height: 40px
+    .retailer-logo
+      right: 10px
+      position: absolute
+      width: 120px
+      bottom: 45px
+  .deal-holder
+    +box-shadow(rgba(0, 0, 0, 0.055) 0px 1px 3px)
+    +border-radius
+    border: #{$deal-border-width}px solid #DDD
+    background-color: white
+    &:hover
+      border: #{$deal-border-width}px solid #08C
+      +box-shadow(rgba(0, 105, 214, 0.25) 0px 1px 4px)
+    @content
+
+=price-tag-container($class, $width: 200px, $font-size: 18px, $height: 10px, $top: 25px)
+  .price-container
+    position: absolute
+    top: $top
+    right: -6px
+    width: $width
+    height: $height
+    border: 0
+    @content
+=price-tag($top: 10px, $left: 10px, $font-size: 20px)
+  .price-icon
+    position: absolute
+    overflow: hidden
+    outline:none
+    border: 0
+    top: 0px
+    right: 0px
+    height: 50px
+    width: 110px
+    background-image: url('/assets/thumbnail-price-tag-cebb8471327e2a009797657d5b57ed82.png')
+    background-size: 110px 50px
+    background-repeat: no-repeat
+    .price
+      position: absolute
+      top: $top
+      left: $left
+      color: white
+      font-size: $font-size
+
+
+
+=deal-holder-inverted($expended-width, $width)
+  cursor: auto
+  position: relative
+  z-index: 1000
+  left: -250px
+  height: #{cover-height($width) + 50}px
+  margin-top: -1px
+  width: $expended-width
+  background-color: white
+  border: #{$deal-border-width}px solid #DDD
+  padding: #{$deal-padding}px
+  background-color: white
+  +box-shadow(rgba(0, 105, 214, 0.25) 0px 1px 4px)
+  +box-shadow(rgba(0, 0, 0, 0.055) 0px 1px 3px)
+  +border-radius
+  margin-bottom: -5px
+  div.caption
+    text-align: right
+  img.cover
+    position: relative
+    left: 240px
+  @content
+
+=deal-holder($expended-width, $width)
+  cursor: auto
+  position: relative
+  z-index: 1000
+  left: -6px
+  margin-top: -1px
+  width: $expended-width
+  height: #{cover-height($width) + 50 + 10}px !important
+  background-color: white
+  border: #{$deal-border-width}px solid #DDD
+  padding: #{$deal-padding}px
+  background-color: white
+  +box-shadow(rgba(0, 105, 214, 0.25) 0px 1px 4px)
+  +box-shadow(rgba(0, 0, 0, 0.055) 0px 1px 3px)
+  +border-radius
+  margin-bottom: -5px
+  @content
+
+
+
+=caption($div-height: 50px, $caption-height: 40px, $font-size: 14px)
+  div.deal .caption
+    height: $div-height
+    position: relative
+    .title
+      height: $caption-height
+      font-size: $font-size
+      padding: 5px
+      color: #08C
+      overflow: hidden
+      font-weight: 600
+      text-align: center
+
+
+
+
+
+
+/* @import ./devices/1200
+/* @import ./devices/980-1200
+/* @import ./devices/768-980
+/* @import ./devices/620-768
+/* @import ./devices/540-650
+/* @import ./devices/440-540
+/* @import ./devices/480-portrait
+/* @import ./devices/480-landscape
+/* @import ./devices/440
+
+
+
+
+
+
+@media (min-width: 1200px)
+  $deals: 5
+  $deals-width: 1170
+  $deal-width: 190
+  $full-deal-width: 438
+  $deal-height: 308
+  $deal-margin-bottom: 20
+
+  +index-page('.pc')
+    +specific-deal
+    +deals($deals-width, $deals-margins)
+      +deal($deals-width, $deal-width, $deals, $deal-margin-bottom)
+        +price-tag-container(5px, 10px, 10px, 23px)
+          +price-tag(10px, 15px, 22px)
+      +full-deal($full-deal-width, $deal-height)
+        +caption(50px, 38px, 14px)

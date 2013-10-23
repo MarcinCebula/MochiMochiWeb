@@ -1,0 +1,157 @@
+
+
+=logo-image
+  .circle
+    +circle(110px)
+    background-color: $Blue
+  .shape
+    display: inline-block
+    position: relative
+    left: 23px
+    bottom: -23px
+=logo-text
+  .text
+    position: relative
+    padding-left: 10px
+    top: 10px
+    display: inline-block
+    text-decoration: none
+=circle($pSize)
+  display: inline-block
+  width: $pSize
+  height: $pSize
+  border-radius: 50%
+
+.container
+  +container
+
+  /* +container
+
+=layout($pWidth)
+  & > div
+    width: $pWidth
+
+  .logo
+    display: inline
+
+  .content
+    .header-divider
+      height: 20px
+      background-color: $Id
+    .header
+      .container
+        +prepend-top($header-padding)
+        +append-bottom(0px)
+        .full-logo-wrapper
+          +prepend(8)
+          +column(10)
+          +last
+          9
+            display: inline-block
+          /* .logo-wrapper
+            /* +logo-image
+            /* +logo-text
+        .location
+          +prepend(10)
+          +column(10)
+          +last
+          visibility: hidden
+          display: none
+
+    .ideology
+      +prepend-top(100px)
+      .container
+        .content
+          +pull(6)
+          display: inline-block
+          ul.message
+            +prepend(8)
+            +column(20)
+            +last
+          .map
+            +container
+            /* position: relative
+            +prepend-top(30px)
+            +column(25)
+            +last
+            .icon-map
+              +prepend-top(100px)
+            .map-pointer
+              position: relative
+              bottom: 280px
+              left: 109px
+              .icon-location-pointer
+                position: relative
+              a.contact
+                left: 78px
+                bottom: 112px
+                position: relative
+
+
+    .portfolio
+      .container
+        padding: 12px 0px
+        position: relative
+        .projects
+          display: inline-block
+          +prepend(5)
+          .mochimochi
+            position: relative
+            .wrapper
+              position: relative
+              .logo
+                .icon-mochimochi-text
+                .message
+  /*           .gokartsnyc
+  /*             +single-transition(all, 1s, ease-in, false)
+  /*             position: relative
+  /*             .wrapper
+  /*               position: absolute
+  /*               top: $GokartsnycWrapperTop
+  /*               left: $GokartsnycWrapperLeft
+  /*               .logo
+  /*                 .icon-gokartsnyc-logo
+  /*                   +single-transition(all, 1s, ease-in, false)
+  /*             &:hover
+  /*               +single-transition(all, 0.5s, ease-in, false)
+  /*               +box-shadow(rgba($Purple, 0.4) 0 0 25px, rgba($LightGray, 0.2) 0 0 3px 1px inset)
+  /*           .acegmr
+  /*             position: relative
+  /*             .wrapper
+  /*               position: absolute
+  /*               top: $AcegmrWrapperTop
+  /*               left: $AcegmrWrapperLeft
+  /*               .logo
+  /*                 +resize-transition-text
+  /*                 +single-transition(all, 1s, ease-in, false)
+  /*                 font-size: $AcegmrWrapperFont
+  /*                 margin-left: 31px
+  /*                 margin-top: 2px
+  /*                 letter-spacing: 3px
+  /*                 .ace
+  /*                   color: #00a99d
+  /*                 .gmr
+  /*                   color: #0f4f4a
+  /*               .message
+  /*                 +resize-transition-text
+  /*                 color: #2f2f2f
+  /*                 margin-top: $AcegmrWrapperMessageTop
+  /*                 margin-left: $AcegmrWrapperMessageLeft
+  /*                 font-size: $ProjectWrapperMessageFont
+  /*                 letter-spacing: $ProjectWrapperMessageSpacing
+  .footer
+    border-top: 20px solid $Blue
+    background-color: white
+    height: 100px
+    .logo
+      +prepend-top(22px)
+      +prepend(9)
+      +column(10)
+      .icon-text-logo
+      display: inline-block
+
+
+  .projects
+    .project
+      +column(7)
+      +prepend(1)

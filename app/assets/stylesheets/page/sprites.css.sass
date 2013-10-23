@@ -1,0 +1,61 @@
+@function newPosition($pOriginalSize, $pNewSize, $pOriginalPosition)
+  @return ($pNewSize / $pOriginalSize) * $pOriginalPosition
+
+
+=generate-index-sprites($pWidth, $pHeight)
+  $Width: 1024px
+  $Height: 794px
+  [class^="icon-"], [class*=" icon-"]
+    background: url("/assets/app/index-sprites-white.png") no-repeat
+    background-size: $pWidth $pHeight
+  .icon-full-logo
+    background-position: newPosition($Width, $pWidth, -550px) newPosition($Height, $pHeight, -300px)
+    width: newPosition($Width, $pWidth, 300px)
+    height: newPosition($Width, $pWidth, 126px)
+  .icon-text-logo
+    background-position: newPosition($Width, $pWidth, 0px) newPosition($Height, $pHeight, -380px)
+    width: newPosition($Width, $pWidth, 340px)
+    height: newPosition($Width, $pWidth, 50px)
+  .icon-logo-shape
+    background-position: newPosition($Width, $pWidth, 0px) newPosition($Height, $pHeight, 0px)
+    width: newPosition($Width, $pWidth, 71px)
+    height: newPosition($Width, $pWidth, 66px)
+  .icon-logo-shape-blue
+    background-position: newPosition($Width, $pWidth, -100px) newPosition($Height, $pHeight, 0px)
+    width: newPosition($Width, $pWidth, 71px)
+    height: newPosition($Width, $pWidth, 66px)
+  .icon-location
+    background-position: newPosition($Width, $pWidth, -200px) newPosition($Height, $pHeight, 0px)
+    width: newPosition($Width, $pWidth, 200px)
+    height: newPosition($Width, $pWidth, 56px)
+  .icon-gokartsnyc-logo
+    background-position: newPosition($Width, $pWidth, -420px) newPosition($Height, $pHeight, 0px)
+    width: newPosition($Width, $pWidth, 143px)
+    height: newPosition($Width, $pWidth, 53px)
+  .icon-location-pointer
+    background-position: newPosition($Width, $pWidth, -900px) newPosition($Height, $pHeight, 0px)
+    width: newPosition($Width, $pWidth, 81px)
+    height: newPosition($Width, $pWidth, 98px)
+  .icon-mochi-background
+    background-position: newPosition($Width, $pWidth, -540px) newPosition($Height, $pHeight, -500px)
+    width: newPosition($Width, $pWidth, 265px)
+    height: newPosition($Width, $pWidth, 265px)
+  .icon-acegmr-background
+    background-position: newPosition($Width, $pWidth, 0px) newPosition($Height, $pHeight, -500px)
+    width: newPosition($Width, $pWidth, 265px)
+    height: newPosition($Width, $pWidth, 265px)
+  .icon-gokartsnyc-background
+    background-position: newPosition($Width, $pWidth, -270px) newPosition($Height, $pHeight, -500px)
+    width: newPosition($Width, $pWidth, 265px)
+    height: newPosition($Width, $pWidth, 265px)
+
+  .icon-map
+    background-position: newPosition($Width, $pWidth, 0) newPosition($Height, $pHeight, -98px)
+    width: newPosition($Width, $pWidth, 520px)
+    height: newPosition($Width, $pWidth, 260px)
+  .divider
+    background: url("/assets/app/divider-white.png") repeat-x
+    height: 18px
+  .background-mask
+    background: url("/assets/app/background-white.png") repeat
+    background-size: 100px 100px

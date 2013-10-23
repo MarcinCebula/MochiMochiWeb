@@ -1,0 +1,20 @@
+div class="container"
+  div class="row"
+
+    div class="span12"
+      div class="row-fluid"
+        hr
+        ul class="thumbnails"
+          - Admin::Game.consoles_with_prefix("@game").each do |console_string|
+            - if !(console = eval(console_string))
+              li class="span3"
+                div style="border-right: 1px solid #cccccc"
+                  b class="span6" style="padding-top:5px; font-size:16px;"
+                    = console_string.gsub(/\..*$/).first[1..-1].camelize
+                  a href="/admin/games/#{@game.id}/console/#{console_string.gsub(/\..*$/).first[1..-1]}/new" class="btn" Add Game
+        hr style="padding-bottom: 20px;margin-top:-5px"
+        div class="row-fluid admin-console-thumbnails"
+          ul class="thumbnails "
+            - Admin::Game.consoles_with_prefix("@game").each do |console_string|
+              - if console = eval(console_string)
+                = render "admin/games/partials/console", :console_string => console_string

@@ -1,0 +1,15 @@
+development:
+  host: localhost
+  database: acegmr_development
+
+test:
+  host: localhost
+  database: acegmr_test
+
+production:
+  host: localhost
+  database: acegmr_production
+  
+
+
+allow_dynamic_fields: false

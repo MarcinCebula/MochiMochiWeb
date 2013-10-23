@@ -1,0 +1,55 @@
+@media (min-width: 440px) and (max-width: 540px)
+  background-color: yellow
+  $deals-width: 400
+  $deal-width: 120
+  $deal-margin-bottom: 20
+  $deals: 3
+
+  +deals($deals-width, $deals-margins)
+    +deal($deals-width, $deal-width, $deals, $deal-margin-bottom)
+    +deal-console('.pc', 0px, 0px)
+    +deal-console('.xbox360', 0px, 0px)
+    +deal-console('.ps3', 0px, 0px)
+    +deal-console('.ps_vita', 0px, 0px)
+    +deal-console('.psp', 0px, 0px)
+    +deal-console('.wii', 0px, 0px)
+    +deal-console('.n3ds', 20px, 20px)
+    +deal-console('.nds', 20px, 20px)
+    +full-deal($deals-width, $deal-width, $deals, $deal-margin-bottom)
+    +full-deal-console(".pc", 211px !important, 3, -138px !important, 174px !important)
+    +full-deal-console(".xbox360", 206px !important, 3, -138px !important, 174px !important)
+    +full-deal-console(".ps3", 187px !important, 3, -138px !important, 174px !important)
+    +full-deal-console(".ps_vita", 199x !important, 3, -138px !important, 174px !important)
+    +full-deal-console(".psp", 347px !important, 3, -138px !important, 174px !important)
+    +full-deal-console(".wii", 214px !important, 3, -138px !important, 174px !important)
+    +full-deal-console(".n3ds", 198px !important, 3, -138px !important, 174px !important)
+    +full-deal-console(".nds", 199px !important, 3, -138px !important, 174px !important)
+
+
+  +caption(50px, 38px, 14px)
+  /* =price-tag-container($class, $img-width: 200px, $font-size: 18px, $font-margin: 10px, $top: 25px)
+  +price-tag-container('.pc', 5px, 10px, 10px, 23px)
+    /* =price-tag($top: 10px, $left: 10px, $font-size: 20px)
+    +price-tag(10px, 15px, 22px)
+    +price-icon
+  +price-tag-container('.xbox360', 5px, 10px, 10px, 23px)
+    +price-tag(10px, 15px, 22px)
+    +price-icon
+  +price-tag-container('.ps3', 5px, 10px, 10px, 23px)
+    +price-tag(10px, 15px, 22px)
+    +price-icon
+  +price-tag-container('.ps_vita', 5px, 10px, 10px, 23px)
+    +price-tag(10px, 15px, 22px)
+    +price-icon
+  +price-tag-container('.psp', 5px, 10px, 10px, 23px)
+    +price-tag(10px, 15px, 22px)
+    +price-icon
+  +price-tag-container('.wii', 5px, 10px, 10px, 23px)
+    +price-tag(10px, 15px, 22px)
+    +price-icon
+  +price-tag-container('.n3ds', 5px, 10px, 10px, 23px)
+    +price-tag(10px, 15px, 22px)
+    +price-icon
+  +price-tag-container('.nds', 5px, 10px, 10px, 23px)
+    +price-tag(10px, 15px, 22px)
+    +price-icon

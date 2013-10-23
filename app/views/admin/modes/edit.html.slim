@@ -1,0 +1,12 @@
+div class="container"
+	div class="row"
+		div class="well"
+			= render 'admin/partials/header', :header => "Edit Mode for #{@mode.game.title}"
+			= semantic_form_for ([:admin, @mode.game, @mode]) do |f|
+				= render 'admin/modes/partials/form', :f => f, :mode => @mode
+				div class="row"
+					hr class="offset12"
+						div class="offset9 span2" style="list-style-type: none;"
+							= f.action :submit, :button_html => { :class => "btn btn-success btn-large span2" }
+						
+					

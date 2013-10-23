@@ -1,0 +1,19 @@
+div class="retailer row-fluid"
+  div class="span3 info"
+    div class="name"
+      h4
+        = retailer.name
+    div class="size"
+      h5
+        | Width:
+        code
+          span
+            = retailer.logo_width
+          | px
+  div class="logo span3"
+    a href="#{retailer.url}"
+      =image_tag retailer.logo, :width => retailer.logo_width, :class => "thumbnail"
+  div class="offset3 span3 action"
+    = admin_retailer_edit(retailer.id)
+    | &nbsp
+    = admin_retailer_delete(retailer.id)

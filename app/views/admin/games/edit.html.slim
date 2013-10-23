@@ -1,0 +1,15 @@
+div class="container"
+  div class="row"
+    legend
+      | Update Game
+
+    div class="span12"
+      = form_tag "/admin/games/#{@game.id}", :method => :put, :class => "form-horizontal" do
+        = render "/admin/games/partials/form", { :game => @game }
+        div class="control-group"
+          hr
+          = link_to "Delete Game", "/admin/games/#{@game.id}",
+            :class => "btn btn-large  btn-danger offset7 span2",
+            :method => :delete,
+            :confirm => "Are you sure you want to remove this game?"
+          button type="submit" class="btn btn-primary btn-large span2" Update Game

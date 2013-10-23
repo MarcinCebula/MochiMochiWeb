@@ -1,0 +1,14 @@
+- if current_admin
+  ul class="nav"
+    li class="#{check_if_active(admin_games_path)}"
+      = link_to "Games", admin_games_path
+    li class="#{check_if_active(admin_hardwares_path)}"
+      = link_to "Hardware", admin_hardwares_path
+    li class="#{check_if_active(admin_devices_path)}"
+      = link_to "Devices", admin_devices_path
+    li class="#{root_if_root_of_resource('/admin/deals')}"
+      = link_to "Deals", '/admin/deals/games/ps3'
+    li class="#{root_if_root_of_resource('/admin/archive')}"
+      = link_to "Archive", '/admin/archive/games/pc'
+    li class="#{check_if_active('/admin/utilities/retailers')}"
+      = link_to "Utilities", '/admin/utilities/retailers'

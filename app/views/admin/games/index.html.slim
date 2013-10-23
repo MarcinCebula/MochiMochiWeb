@@ -1,0 +1,21 @@
+div class="container"
+  div class="row"
+
+    div class="span12"
+      div class="navbar"
+        div class="navbar-inner"
+          = form_tag("/admin/games", :method => :get, :class => "navbar-search pull-left") do
+            = text_field_tag 'search', (params[:search] || "Search"), :class => "search-query"
+          div class="pull-right"
+            = link_to "/admin/games/new", :class => "btn btn-primary" do
+              i class="icon-plus icon-white"
+              span &nbsp;Game
+      div class="row-fluid"
+        div class="span12"
+          ul class="thumbnails"
+            - @games.each do |game|
+              = render "admin/games/partials/game", :game => game
+      div class="row"
+        div class="span12"
+          hr
+            = paginate @games

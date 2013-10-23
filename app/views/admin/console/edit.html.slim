@@ -1,0 +1,18 @@
+div class="container"
+	div class="row"
+
+		div class="span12"
+			= form_tag "/admin/games", :method => :post, :class => "form-horizontal" do
+				legend
+					| Add Game
+				div class="control-group"
+					label class="control-label" for="title" Title
+					div class="controls"
+						input type="text" name="game[title]" placeholder="Game Title"
+				div class="control-group"
+					label class="control-label" for="cover" URL
+					div class="controls"
+						input type="text" name="game[cover]" class="input-xxlarge" placeholder="Game Cover URL"
+				div class="control-group"
+					hr
+					button type="submit" class="btn btn-primary btn-large offset9 span2" Add Game

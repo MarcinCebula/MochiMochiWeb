@@ -1,0 +1,23 @@
+- fields = [ ["Title", deal.title], ["Title ID", deal.title_id], ["Deal Url", link_to(deal.url, deal.url)],  ["Retailer", deal.retailer], ["Price", deal.price],["Cover URL", link_to(deal.cover, deal.cover)], ["Genre", deal.genre.join(', ')], ["Modes", deal.modes.join(', ')]]
+
+div class="span12"
+  hr
+  div class="row-fluid"
+    div class="span3"
+      div class="thumbnail" style="margin-top:10px;"
+        = image_tag deal.cover
+
+    div class="span9"
+      h3 style="margin-top:0px;"
+        = deal.title
+
+      table class="table table-striped table-bordered"
+        tbody
+          - fields.each do |field|
+            tr
+              td
+                b
+                  = field[0]
+              td
+                span
+                  = field[1]

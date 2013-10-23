@@ -1,0 +1,7 @@
+div class="container"
+  div class="row"
+
+    = form_tag "/admin/games/#{@game.id}/console/#{@console.resource_name}/#{@console.id}", :method => :put, :class => "form-horizontal" do
+      = render "admin/console/partials/form", { :console => @console.resource_name, :game => @game }
+      div class="control-group"
+        button type="submit" class="btn btn-primary btn-large offset9 span2" Update Game

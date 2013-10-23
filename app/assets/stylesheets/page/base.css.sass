@@ -1,0 +1,54 @@
+@import url(http://fonts.googleapis.com/css?family=Quicksand:300,400|Days+One)
+@import blueprint/grid
+@import blueprint/liquid
+@import blueprint
+@import compass
+@import compass/css3
+@import compass/utilities/color/contrast
+
+@import ./defaults
+@import ./media_query_defaults
+@import ./sprites
+
+/* @media screen and (min-width: 0px)
+/*   +pixels1280
+/*   @import ./layout
+/*   body
+/*     +layout
+
+@media screen and (min-width: 0px)
+  +grid-config(32, 26px, 4px)
+  +generate-index-sprites( 1024px / 1.3, 794px / 1.3)
+  $Id: $Blue
+  @import ./local_defaults/0_defaults
+  @import ./layout
+  body
+    +layout
+
+
+@media screen and (min-width: 968px)
+  +grid-config(32, 28px, 2px)
+  +generate-index-sprites( 1024px / 1.2, 794px / 1.2)
+  $Id: $Blue
+  @import ./local_defaults/968_defaults
+  @import ./layout
+  body
+    +layout
+
+@media screen and (min-width: 1180px)
+  +grid-config(32, 34px, 3px)
+  +generate-index-sprites( 1024px / 1.1, 794px / 1.1)
+  $Id: $Blue
+  @import ./local_defaults/1180_defaults
+  @import ./layout
+  body
+    +layout
+
+@media screen and (min-width: 1281px)
+  +grid-config(32, 36px, 4px)
+  +generate-index-sprites( 1024px / 1.0, 794px / 1.0)
+  $Id: $Blue
+  @import ./local_defaults/1281_defaults
+  @import ./layout
+  body
+    +layout

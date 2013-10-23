@@ -1,0 +1,199 @@
+$deal-holder-padding: 5
+
+.deal-holder
+  border: 1px solid #DDD
+  padding: #{$deal-holder-padding}px
+  background-color: white
+
+
+=deal-holder-width($container-size, $deals-per-container, $margin-left)
+  width: #{($container-size -  (($margin-left + ($deal-holder-padding *2)) * $deals-per-container))/ $deals-per-container}px
+
+
+=deals($container-size, $deals-per-container, $margin-left, $margin-bottom)
+  ul.deals
+    display: inline-block
+    margin-left: 5px
+    div.deal
+      +deal-holder-width($container-size, $deals-per-container, $margin-left)
+      float: left
+      margin-left: #{$margin-left}px
+      margin-bottom: #{$margin-bottom}px
+      &:nth-child( #{$deals-per-container}n + 1)
+        clear: left
+        margin-left: 0px
+
+=deals-mixin($container-size, $deals-per-container, $margin-left, $margin-bottom)
+  +deals($container-size, $deals-per-container, $margin-left, $margin-bottom)
+
+  /* .deal-expend
+    /* width: 400px
+  /* .deal
+  /*   position: relative
+  /*   padding-right: 5px
+  /*   width: 208px
+  /*   &.cover
+  /*     height: 250px
+  /* .deal-thumbnail
+  .deal-price
+    position: absolute
+    top: 30px
+    right: -10px
+    width: 120px
+    .deal-price-text
+      position: absolute
+      top: 19px
+      left: -3px
+      font-size: 26px
+      color: white
+
+.price-container
+  position: absolute
+  top: 30px
+  right: -6px
+  width: 130px
+  height: 40px
+  outline:none
+  border: 0
+  .price
+    position: absolute
+    top: 10px
+    left: 35px
+    color: white
+    font-size: 24px
+  .price-icon
+    position: absolute
+    overflow: hidden
+    outline:none
+    border: 0
+    top: 0px
+    right: 0px
+    height: 50px
+    width: 110px
+    background-image: url('/assets/thumbnail-price-tag-cebb8471327e2a009797657d5b57ed82.png')
+    background-size: 110px 50px
+    background-repeat: no-repeat
+
+.deal-thumbnail
+  float: left
+
+@media (max-width: 420px)
+  .deal
+    width: 200px
+    background-color: red
+  .deal-price
+    position: absolute
+    top: 40px
+    right: -10px
+    width: 150px
+    .deal-price-text
+      position: absolute
+      top: 22px
+      left: 5px
+      font-size: 30px
+      color: white
+
+@media (min-width:420px) and (max-width: 768px)
+  .deals-index ul.thumbnails li.deal-thumbnail:nth-child(4n + 1)
+    clear: left
+    margin-left: 0px
+  .deal
+    width: 130px
+  .deal-price
+    position: absolute
+    top: 40px
+    right: -10px
+    width: 150px
+    .deal-price-text
+      position: absolute
+      top: 22px
+      left: 5px
+      font-size: 30px
+      color: white
+
+
+@media (min-width:420px) and (max-width: 768px)
+
+
+
+@Media (min-width: 768px) and (max-width: 980px)
+  .deals-index ul.thumbnails li.deal-thumbnail:nth-child(4n + 1)
+    clear: left
+    margin-left: 0px
+
+  .deal
+    width: 148px
+  .deal-price
+    position: absolute
+    top: 20px
+    right: -10px
+    width: 80px
+    .deal-price-text
+      position: absolute
+      top: 13px
+      left: -6px
+      font-size: 18px
+      color: white
+
+@media (min-width: 980px) and (max-width: 1200px)
+  ul.thumbnails li.deal-thumbnail:nth-child(4n + 1)
+    clear: left
+    margin-left: 0px
+
+  .deal
+    position: relative
+    width: 202px
+  .deal-price
+    position: absolute
+    top: 20px
+    right: -10px
+    width: 100px
+    .deal-price-text
+      position: absolute
+      top: 16px
+      left: -6px
+      font-size: 20px
+      color: white
+
+@media (min-width: 1200px)
+  /* +deals-mixin($container-size, $deals-per-container, margin-left, margin-bottom)
+    /* +deal-mixin(')
+    /* +active-deal-mixin()
+  +deals-mixin(1160, 5, 20, 30)
+
+
+
+
+@media (min-width: 980px) and (max-width: 1200px)
+  +deals-mixin(940, 4, 200)
+  +price-tag-container
+    +price-tag
+
+@Media (min-width: 768px) and (max-width: 980px)
+  +deals-mixin(724, 3, 200)
+  +price-tag
+
+@media (min-width:620px) and (max-width: 768px)
+  +deals-mixin(620, 3, 170)
+  +price-tag
+
+@media (min-width: 540px) and (max-width: 650px)
+  +deals-mixin(440, 2, 180)
+  +price-tag
+
+@media (min-width: 440px) and (max-width: 540px)
+  +deals-mixin(400, 2, 160)
+  +price-tag
+
+@media (max-width: 440px)
+  +deals-mixin(360, 2, 150)
+  +price-tag
+
+
+@media (max-device-width: 480px) and (orientation: portrait)
+  +deals-mixin(280, 2, 115)
+  +price-tag
+
+@media (max-device-width: 480px) and (orientation: landscape)
+  +deals-mixin(440, 2, 180)
+  +price-tag

@@ -1,0 +1,77 @@
+@import blueprint/reset
+@import blueprint/liquid
+@import blueprint
+@import compass
+@import compass/css3
+@import compass/utilities/color/contrast
+
+
+
+@media screen and (min-width: 0px)
+  +blueprint
+  $legacy-support-for-ie8: true
+  $legacy-support-for-ie: true
+  $BluePrintGridColumn: 24
+  $BluePrintGridWidth: 36px
+  $BluePrintGridMargin: 4px
+  $blueprint-grid-columns: $BluePrintGridColumn
+  $blueprint-grid-width: $BluePrintGridWidth
+  $blueprint-grid-margin: $BluePrintGridMargin
+  $blueprint-grid-outer-width: $blueprint-grid-width + $blueprint-grid-margin
+  $blueprint-container-size: $blueprint-grid-outer-width * $blueprint-grid-columns - $blueprint-grid-margin
+
+  body
+    background-color: #2f2f2f
+    margin: 0
+    padding: 0
+    line-height: 1.5em
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media screen and (min-width: 1280px)
+/*   +blueprint
+/*   $legacy-support-for-ie8: true
+/*   $legacy-support-for-ie: true
+/*   @import partials/variables
+/*   @import partials/base
+/*   @import partials/buttons
+/*   @import partials/banner
+/*   @import partials/involvement_banner
+/*   @import partials/cosponsor_photo_wall
+/*   @import partials/categories
+/*   @import partials/dropdown_button
+/*   @import partials/status_chart
+/*   @import partials/pages
+/*   @import firefox_base
+/*   $BluePrintGridColumn: 24
+/*   $BluePrintGridWidth: 44px
+/*   $BluePrintGridMargin: 10px
+/*   $blueprint-grid-columns: $BluePrintGridColumn
+/*   $blueprint-grid-width: $BluePrintGridWidth
+/*   $blueprint-grid-margin: $BluePrintGridMargin
+/*   $blueprint-grid-outer-width: $blueprint-grid-width + $blueprint-grid-margin
+/*   $blueprint-container-size: $blueprint-grid-outer-width * $blueprint-grid-columns - $blueprint-grid-margin
+
+/*   #main-page
+/*     +main-page
+/*   #bills-page
+/*     +bills-page
+/*   #details-page
+/*     +details-page
+/*   #legal-page-wrapper
+/*     +legal-page

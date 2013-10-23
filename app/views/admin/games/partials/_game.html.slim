@@ -1,0 +1,22 @@
+li class="span6"
+  div class="thumbnail"
+    div class="row-fluid"
+      div class="span2"
+        = image_tag game.cover
+      div class="span10"
+        div class="row-fluid"
+          div class="span10"
+            div class="title blue-header"
+              h4
+                = game.title
+              hr
+          div class="span2"
+            btn class="btn-group"
+              = link_to "/admin/games/#{game.id}/edit", :class => "btn btn-small btn-warning" do
+                i class="icon-edit icon-white"
+              = link_to game, :class => "btn btn-small btn-primary" do
+                i class="icon-th-list icon-white"
+        div class="btn-group"
+          - Admin::Game.consoles_with_prefix("game").each do |console_string|
+            - if console = eval(console_string)
+              = admin_console_show_button(game.id, console)

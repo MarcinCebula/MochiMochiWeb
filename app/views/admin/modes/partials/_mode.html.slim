@@ -1,0 +1,58 @@
+div class="span4"
+	div class="well"
+		div class="row"
+			div class="span4" 
+				- if mode.single_player
+					= image_tag mode.single_player_icon
+					code style="font-size:16px;"
+					 = mode.single_player_title
+					div class="row"
+						hr class="span4"
+			div class="span4" 
+				- if mode.multi_player
+					= image_tag mode.multi_player_icon
+					code style="font-size:16px;"
+						= mode.multi_player_title
+					div class="row"
+						hr class="span4"
+				
+			div class="span4" 						
+				- if mode.coop
+					= image_tag mode.coop_icon
+					code style="font-size:16px;"
+						= mode.coop_title
+					div class="row"
+						hr class="span4"
+				
+			div class="span4" 						
+				- if mode.local_coop
+					= image_tag mode.local_coop_icon
+					code style="font-size:16px;"
+						= mode.local_coop_title
+					div class="row"
+						hr class="span4"
+		
+			div class="span4" 						
+				- if mode.controller_enabled
+					= image_tag mode.controller_enabled_icon
+					code style="font-size:16px;"
+						= mode.controller_enabled_title
+					div class="row"
+						hr class="span4"		
+
+			div class="span4" 						
+				- if mode.cross_platform
+					= image_tag mode.cross_platform_icon
+					code style="font-size:16px;"
+						= mode.cross_platform_title
+					div class="row"
+						hr class="span4"
+
+			div class="span4" 						
+				- if mode.mmo
+					= image_tag mode.mmo_icon
+					code style="font-size:16px;"
+						= mode.mmo_title
+					div class="row"
+						hr class="span4"
+				

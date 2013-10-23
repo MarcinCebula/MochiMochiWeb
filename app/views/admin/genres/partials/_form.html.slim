@@ -1,0 +1,5 @@
+div class="span5"
+	div class="row"
+		
+		div class="offset1 span5"
+			= f.input :title, :as => :select, :collection => Hash[GenreList.all.map{|b| [b.title, b.id]}]

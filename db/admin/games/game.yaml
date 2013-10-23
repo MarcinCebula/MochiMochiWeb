@@ -1,0 +1,52 @@
+game: 
+  title: |-
+    Battlefield 3
+  - n3ds:
+    title: |-
+      SomeTitle
+    cover: 
+    price: 
+    genre: 
+    modes:
+  - nds:
+    title: |-
+      SomeTitle
+    cover: 
+    price: 
+    genre: 
+    modes: 
+  - pc:
+    title: |-
+      SomeTitle
+    cover: 
+    price: 
+    genre: 
+    mode:
+  - ps3:
+    title: |-
+      SomeTitle
+    cover: 
+    price: 
+    genre: 
+    modes: 
+  - ps_vita:
+    title: |-
+      SomeTitle
+    cover: 
+    price: 
+    genre: 
+    mode:
+  - psp:
+    title: |-
+      SomeTitle
+    cover: 
+    price: 
+    genre: 
+    mode:
+  - xbox360:
+    title: |-
+      SomeTitle
+    cover: 
+    price: 
+    genre: 
+    modes:

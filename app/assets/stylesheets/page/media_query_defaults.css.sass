@@ -1,0 +1,116 @@
+=blueprint-layout-variables($pBluePrintGridColumn, $pBluePrintGridWidth, $pBluePrintGridMargin)
+  $legacy-support-for-ie8: true
+  $legacy-support-for-ie: true
+  $blueprint-grid-columns: $pBluePrintGridColumn
+  $blueprint-grid-width: $pBluePrintGridWidth
+  $blueprint-grid-margin: $pBluePrintGridMargin
+  $blueprint-grid-outer-width: $blueprint-grid-width + $blueprint-grid-margin
+  $blueprint-container-size: $blueprint-grid-outer-width * $blueprint-grid-columns - $blueprint-grid-margin
+
+
+
+=blueprint-liquid-layout-variables
+  $blueprint-grid-columns: 32
+  $blueprint-container-size: 450px
+  $blueprint-grid-margin: 10px
+  $blueprint-grid-width: ($blueprint-container-size + $blueprint-grid-margin) / $blueprint-grid-columns - $blueprint-grid-margin
+
+  /* $blueprint-liquid-grid-columns: 24
+  /* $blueprint-liquid-grid-width: 3.167%
+  /* $blueprint-liquid-grid-margin: 1.042%
+  /* $blueprint-liquid-container-width: 80%
+  /* $blueprint-liquid-container-min-width: 450px
+  /* $blueprint-liquid-grid-push-pull: -($blueprint-liquid-grid-margin + $blueprint-liquid-grid-width)
+
+
+//=pixels1466 -- 26%
+=grid-config($pBluePrintGridColumn, $pBluePrintGridWidth, $pBluePrintGridMargin)
+  +blueprint-layout-variables($pBluePrintGridColumn, $pBluePrintGridWidth, $pBluePrintGridMargin)
+
+
+=liquid-grid-config
+  +blueprint-liquid-layout-variables
+
+
+
+
+
+
+
+
+=defaults_0
+  background-color: green !important
+  $header-padding: 10px
+=defaults_968
+  $header-padding: 50px
+
+//=pixels1440
+//=pixels1920
+
+
+
+
+
+
+
+
+/* /* Smartphones (portrait and landscape) ----------- */
+/* @media only screen
+/* and (min-device-width : 320px)
+/* and (max-device-width : 480px) {
+/* /* Styles */
+/* }
+
+/* /* Smartphones (landscape) ----------- */
+/* @media only screen
+/* and (min-width : 321px) {
+/* /* Styles */
+/* }
+
+/* /* Smartphones (portrait) ----------- */
+/* @media only screen
+/* and (max-width : 320px) {
+/* /* Styles */
+/* }
+
+/* /* iPads (portrait and landscape) ----------- */
+/* @media only screen
+/* and (min-device-width : 768px)
+/* and (max-device-width : 1024px) {
+/* /* Styles */
+/* }
+
+/* /* iPads (landscape) ----------- */
+/* @media only screen
+/* and (min-device-width : 768px)
+/* and (max-device-width : 1024px)
+/* and (orientation : landscape) {
+/* /* Styles */
+/* }
+
+/* /* iPads (portrait) ----------- */
+/* @media only screen
+/* and (min-device-width : 768px)
+/* and (max-device-width : 1024px)
+/* and (orientation : portrait) {
+/* /* Styles */
+/* }
+
+/* /* Desktops and laptops ----------- */
+/* @media only screen
+/* and (min-width : 1224px) {
+/* /* Styles */
+/* }
+
+/* /* Large screens ----------- */
+/* @media only screen
+/* and (min-width : 1824px) {
+/* /* Styles */
+/* }
+
+/* /* iPhone 4 ----------- */
+/* @media
+/* only screen and (-webkit-min-device-pixel-ratio : 1.5),
+/* only screen and (min-device-pixel-ratio : 1.5) {
+/* /* Styles */
+/* }

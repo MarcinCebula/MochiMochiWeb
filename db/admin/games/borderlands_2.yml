@@ -1,0 +1,24 @@
+game: 
+  title: |-
+    Borderlands 2
+  pc: 
+    title: |-
+      Borderlands 2
+    cover: https://s3.amazonaws.com/AceGmr/v2/games/borderlands_2/Borderlands_2_PC.jpg
+    price: 5999
+    genre: [First-Person, Shooter, Action, Role-Playing]
+    modes: [Single-Player, Multi-Player]
+  ps3:
+    title: |-
+      Borderlands 2
+    cover: https://s3.amazonaws.com/AceGmr/v2/games/borderlands_2/Borderlands_2_Ps3.jpg
+    price: 5999
+    genre: [First-Person, Shooter, Action, Role-Playing]
+    modes: [Single-Player, Multi-Player]
+  xbox360:
+    title: |-
+      Borderlands 2
+    cover: https://s3.amazonaws.com/AceGmr/v2/games/borderlands_2/Borderlands_2_Xbox360.jpg
+    price: 5999
+    genre: [First-Person, Shooter, Action, Role-Playing]
+    modes: [Single-Player, Multi-Player]
