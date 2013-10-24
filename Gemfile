@@ -24,7 +24,7 @@ gem 'bcrypt-ruby'
 gem 'mini_magick'
 gem 'carrierwave'
 gem 'capistrano'
-gem 'google-analytics-rails'
+# gem 'google-analytics-rails'
 gem 'airbrake'
 
 
