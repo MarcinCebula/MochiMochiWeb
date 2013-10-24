@@ -1,4 +1,4 @@
-AppTemplate::Application.configure do
+MochiMochiWeb::Application.configure do
 
   # Settings specified here will take precedence over those in config/application.rb
   ::ActiveSupport::Deprecation.silenced = true
@@ -74,6 +74,6 @@ AppTemplate::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.Mongoid::Errors::Validations.auto_explain_threshold_in_seconds = 0.5
 
-  GA.tracker = "UA-34348687-1"
+  # GA.tracker = "UA-34348687-1"
 
 end

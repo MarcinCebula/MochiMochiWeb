@@ -5,4 +5,4 @@
 # import 'lib/tasks/jasmine.rake'
 require File.expand_path('../config/application', __FILE__)
 
-AppTemplate::Application.load_tasks
+MochiMochiWeb::Application.load_tasks
