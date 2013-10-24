@@ -3,12 +3,9 @@
                   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
                  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-45102134-1', '9wavelabs.com');
 
-
-ga('create', 'UA-45102134-', {
+ga('create', 'UA-45102134-1', {
    'cookieDomain': 'mochimochi.9wavelabs.com',
    'cookieName': 'mochimochiweb',
    'cookieExpires': 20000
 });
-ga('send', 'pageview');
