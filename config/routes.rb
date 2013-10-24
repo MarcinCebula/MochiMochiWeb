@@ -1,4 +1,4 @@
-AppTemplate::Application.routes.draw do
+MochiMochiWeb::Application.routes.draw do
 
   get "pages" => "pages#index"
 

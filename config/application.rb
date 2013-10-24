@@ -20,7 +20,7 @@ if defined?(Bundler)
   # Bundler.require(:default, :assets, Rails.env)
 end
 
-module AppTemplate
+module MochiMochiWeb
   class Application < Rails::Application
 
     config.exceptions_app = self.routes
