@@ -1,4 +1,4 @@
-NineWaveLabs::Application.routes.draw do
+AppTemplate::Application.routes.draw do
 
   get "pages" => "pages#index"
 
