@@ -1,0 +1,1820 @@
+@import url(http://fonts.googleapis.com/css?family=Quicksand:300,400|Days+One);
+/* line 14, ../../../app/assets/stylesheets/page/defaults.css.sass */
+.green {
+  color: #86ab66;
+}
+
+/* line 16, ../../../app/assets/stylesheets/page/defaults.css.sass */
+.yellow {
+  color: #eba438;
+}
+
+/* line 18, ../../../app/assets/stylesheets/page/defaults.css.sass */
+.blue {
+  color: #4ab3d2;
+}
+
+/* line 20, ../../../app/assets/stylesheets/page/defaults.css.sass */
+.purple {
+  color: #9b59b6;
+}
+
+/* line 24, ../../../app/assets/stylesheets/page/defaults.css.sass */
+ul.clean {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 29, ../../../app/assets/stylesheets/page/defaults.css.sass */
+body {
+  font-family: "Days One";
+  background-color: whitesmoke;
+  margin: 0px;
+}
+
+/* line 35, ../../../app/assets/stylesheets/page/defaults.css.sass */
+h1 {
+  font-weight: 400;
+  font-size: 30px;
+  font-family: "Days One", sans-serif;
+  color: #333333;
+  word-spacing: -3px;
+  letter-spacing: -2px;
+  margin: 0.6em 0em 0.5em 0em;
+}
+
+/* line 44, ../../../app/assets/stylesheets/page/defaults.css.sass */
+h3 {
+  color: #222222;
+}
+
+/* line 47, ../../../app/assets/stylesheets/page/defaults.css.sass */
+h4 {
+  font-size: 18px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  color: #333333;
+  line-height: 26px;
+  margin: 0.2em 0em 0.2em 0em;
+}
+
+/* line 54, ../../../app/assets/stylesheets/page/defaults.css.sass */
+h5 {
+  font-size: 18px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  color: #666666;
+  line-height: 26px;
+  margin: 0.2em 0em 0.2em 0em;
+}
+
+/* line 62, ../../../app/assets/stylesheets/page/defaults.css.sass */
+h6, .h6 {
+  font-size: 18px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  color: #333333;
+  line-height: 26px;
+  margin: 0.2em 0em 0.2em 0em;
+}
+
+/* line 70, ../../../app/assets/stylesheets/page/defaults.css.sass */
+.link {
+  color: #6688cc;
+}
+
+/* line 72, ../../../app/assets/stylesheets/page/defaults.css.sass */
+a.clean {
+  text-decoration: none;
+}
+
+/* /* Smartphones (portrait and landscape) ----------- */
+/* @media only screen */
+/* and (min-device-width : 320px) */
+/* and (max-device-width : 480px) { */
+/* /* Styles */
+/* } */
+/* /* Smartphones (landscape) ----------- */
+/* @media only screen */
+/* and (min-width : 321px) { */
+/* /* Styles */
+/* } */
+/* /* Smartphones (portrait) ----------- */
+/* @media only screen */
+/* and (max-width : 320px) { */
+/* /* Styles */
+/* } */
+/* /* iPads (portrait and landscape) ----------- */
+/* @media only screen */
+/* and (min-device-width : 768px) */
+/* and (max-device-width : 1024px) { */
+/* /* Styles */
+/* } */
+/* /* iPads (landscape) ----------- */
+/* @media only screen */
+/* and (min-device-width : 768px) */
+/* and (max-device-width : 1024px) */
+/* and (orientation : landscape) { */
+/* /* Styles */
+/* } */
+/* /* iPads (portrait) ----------- */
+/* @media only screen */
+/* and (min-device-width : 768px) */
+/* and (max-device-width : 1024px) */
+/* and (orientation : portrait) { */
+/* /* Styles */
+/* } */
+/* /* Desktops and laptops ----------- */
+/* @media only screen */
+/* and (min-width : 1224px) { */
+/* /* Styles */
+/* } */
+/* /* Large screens ----------- */
+/* @media only screen */
+/* and (min-width : 1824px) { */
+/* /* Styles */
+/* } */
+/* /* iPhone 4 ----------- */
+/* @media */
+/* only screen and (-webkit-min-device-pixel-ratio : 1.5), */
+/* only screen and (min-device-pixel-ratio : 1.5) { */
+/* /* Styles */
+/* } */
+/* @media screen and (min-width: 0px) */
+/*   +pixels1280 */
+/*   @import ./layout */
+/*   body */
+/*     +layout */
+@media screen and (min-width: 0px) {
+  /* line 8, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  [class^="icon-"], [class*=" icon-"] {
+    background: url("/assets/app/index-sprites-white.png") no-repeat;
+    background-size: 787.69231px 610.76923px;
+  }
+
+  /* line 11, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-full-logo {
+    background-position: -423.07692px -230.76923px;
+    width: 230.76923px;
+    height: 96.92308px;
+  }
+
+  /* line 15, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-text-logo {
+    background-position: 0px -292.30769px;
+    width: 261.53846px;
+    height: 38.46154px;
+  }
+
+  /* line 19, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-logo-shape {
+    background-position: 0px 0px;
+    width: 54.61538px;
+    height: 50.76923px;
+  }
+
+  /* line 23, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-logo-shape-blue {
+    background-position: -76.92308px 0px;
+    width: 54.61538px;
+    height: 50.76923px;
+  }
+
+  /* line 27, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-location {
+    background-position: -153.84615px 0px;
+    width: 153.84615px;
+    height: 43.07692px;
+  }
+
+  /* line 31, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-gokartsnyc-logo {
+    background-position: -323.07692px 0px;
+    width: 110.0px;
+    height: 40.76923px;
+  }
+
+  /* line 35, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-location-pointer {
+    background-position: -692.30769px 0px;
+    width: 62.30769px;
+    height: 75.38462px;
+  }
+
+  /* line 39, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-mochi-background {
+    background-position: -415.38462px -384.61538px;
+    width: 203.84615px;
+    height: 203.84615px;
+  }
+
+  /* line 43, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-acegmr-background {
+    background-position: 0px -384.61538px;
+    width: 203.84615px;
+    height: 203.84615px;
+  }
+
+  /* line 47, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-gokartsnyc-background {
+    background-position: -207.69231px -384.61538px;
+    width: 203.84615px;
+    height: 203.84615px;
+  }
+
+  /* line 52, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-map {
+    background-position: 0 -75.38462px;
+    width: 400.0px;
+    height: 200.0px;
+  }
+
+  /* line 56, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .divider {
+    background: url("/assets/app/divider-white.png") repeat-x;
+    height: 18px;
+  }
+
+  /* line 59, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .background-mask {
+    background: url("/assets/app/background-white.png") repeat;
+    background-size: 100px 100px;
+  }
+
+  /* line 3, ../../../app/assets/stylesheets/page/local_defaults/0_defaults.sass */
+  h1 {
+    font-size: 40px;
+    color: white;
+  }
+
+  /* line 7, ../../../app/assets/stylesheets/page/local_defaults/0_defaults.sass */
+  h3 {
+    font-size: 13px;
+  }
+
+  /* line 9, ../../../app/assets/stylesheets/page/local_defaults/0_defaults.sass */
+  h5 {
+    font-size: 12px;
+  }
+
+  /* line 12, ../../../app/assets/stylesheets/page/local_defaults/0_defaults.sass */
+  .h2 {
+    font-size: 39px !important;
+  }
+
+  /* line 14, ../../../app/assets/stylesheets/page/local_defaults/0_defaults.sass */
+  .h6 {
+    font-size: 15px;
+  }
+
+  /* =resize-transition-image */
+  /*   //+single-transition(all, 0.5s, false, false) */
+  /*   +transition-property(width, height) */
+  /*   +transition-duration(1s) */
+  /*   //x[ ease | linear | ease-in | ease-out | ease-in-out | cubic-bezier(x1, y1, x2, y2) */
+  /*   +transition-timing-function(ease-in) */
+  /*   //+transition-delay(0) */
+  /* =resize-transition-text */
+  /*   +transition-property(font-size) */
+  /*   +transition-duration(1s) */
+  /*   +transition-timing-function(ease-in) */
+  /* line 39, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .container {
+    width: 956px;
+    margin: 0 auto;
+    overflow: hidden;
+    *zoom: 1;
+  }
+
+  /* line 42, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .circle-wrapper {
+    display: inline-block;
+    width: 265px;
+    height: 265px;
+    border-radius: 50%;
+  }
+
+  /* line 45, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .background-light-gray {
+    background-color: #333333;
+  }
+
+  /* line 48, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .background-whitish {
+    background-color: #f9f9f9;
+  }
+
+  /* line 51, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body > div {
+    width: 968px;
+  }
+  /* line 53, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .logo {
+    display: inline;
+  }
+  /* line 57, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .header-divider {
+    height: 18px;
+    background-color: #4ab3d2;
+  }
+  /* line 61, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .header .container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  /* line 64, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .header .container .full-logo-wrapper {
+    padding-left: 30px;
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 236px;
+    /* .logo-wrapper
+     * /* +logo-image
+     * /* +logo-text */
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .content .header .container .full-logo-wrapper {
+    overflow-x: hidden;
+  }
+  /* line 67, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .header .container .full-logo-wrapper a {
+    display: inline-block;
+  }
+  /* line 72, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .header .container .location {
+    margin-top: 31px;
+    padding-left: 480px;
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 146px;
+    margin-right: 0;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .content .header .container .location {
+    overflow-x: hidden;
+  }
+  /* line 77, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .ideology {
+    margin-top: 20px;
+  }
+  /* line 80, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .ideology .container .content {
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 956px;
+    display: inline-block;
+    padding-left: 150px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .content .ideology .container .content {
+    overflow-x: hidden;
+  }
+  /* line 84, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .ideology .container .content ul.message {
+    margin-top: 50px;
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 236px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .content .ideology .container .content ul.message {
+    overflow-x: hidden;
+  }
+  /* line 87, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .ideology .container .content .map {
+    /* position: relative */
+    padding-left: 30px;
+    margin-top: 55px;
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 476px;
+    margin-right: 0;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .content .ideology .container .content .map {
+    overflow-x: hidden;
+  }
+  /* line 94, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .ideology .container .content .map .map-pointer {
+    position: relative;
+    bottom: 215px;
+    left: 83px;
+  }
+  /* line 98, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .ideology .container .content .map .map-pointer .icon-location-pointer {
+    position: relative;
+  }
+  /* line 100, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .ideology .container .content .map .map-pointer a.contact {
+    left: 59px;
+    bottom: 90px;
+    position: relative;
+  }
+  /* line 107, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .portfolio .container {
+    padding: 12px 0px;
+    position: relative;
+  }
+  /* line 110, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .portfolio .container h1.header {
+    padding-left: 390px;
+  }
+  /* line 112, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .portfolio .container .projects {
+    display: inline-block;
+    padding-left: 120px;
+  }
+  /* line 115, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .portfolio .container .projects .mochimochi {
+    position: relative;
+  }
+  /* line 117, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .portfolio .container .projects .mochimochi .wrapper {
+    position: relative;
+  }
+  /* line 123, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .footer {
+    border-top: 20px solid #4ab3d2;
+    background-color: white;
+    height: 100px;
+  }
+  /* line 127, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .footer .logo {
+    margin-top: 26px;
+    padding-left: 660px;
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 266px;
+    display: inline-block;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .footer .logo {
+    overflow-x: hidden;
+  }
+  /* line 138, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project {
+    margin-top: 10px;
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 836px;
+    margin-right: 0;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .projects .project {
+    overflow-x: hidden;
+  }
+  /* line 142, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project .logo-link {
+    position: relative;
+    display: inline-block;
+    display: inline;
+    float: left;
+  }
+  /* line 146, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project .logo-link .logo {
+    margin-top: -1px;
+    z-index: 10;
+    position: relative;
+    display: inline-block;
+  }
+  /* line 151, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project .content {
+    position: relative;
+    margin-top: 1px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+    display: inline;
+    float: left;
+    position: relative;
+    margin-left: -120px;
+    display: inline;
+    float: right;
+    height: 203px;
+    background-color: white;
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 626px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .projects .project .content {
+    overflow-x: hidden;
+  }
+  /* line 160, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project .content .header {
+    padding-left: 150px;
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 446px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .projects .project .content .header {
+    overflow-x: hidden;
+  }
+  /* line 163, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project .content .description {
+    padding-left: 150px;
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 446px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .projects .project .content .description {
+    overflow-x: hidden;
+  }
+  /* line 166, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project .content .links {
+    position: absolute;
+    right: 20px;
+    bottom: 0px;
+    /* +prepend(4) */
+    /* +column(15) */
+  }
+  /* line 172, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project .content .links .link {
+    display: inline;
+    float: left;
+  }
+  /* line 174, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project .content .links .link .info {
+    display: inline;
+    float: left;
+  }
+  /* line 176, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project .content .links .link .url {
+    padding-left: 5px;
+    display: inline;
+    float: right;
+  }
+}
+@media screen and (min-width: 968px) {
+  /* line 8, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  [class^="icon-"], [class*=" icon-"] {
+    background: url("/assets/app/index-sprites-white.png") no-repeat;
+    background-size: 853.33333px 661.66667px;
+  }
+
+  /* line 11, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-full-logo {
+    background-position: -458.33333px -250.0px;
+    width: 250px;
+    height: 105px;
+  }
+
+  /* line 15, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-text-logo {
+    background-position: 0px -316.66667px;
+    width: 283.33333px;
+    height: 41.66667px;
+  }
+
+  /* line 19, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-logo-shape {
+    background-position: 0px 0px;
+    width: 59.16667px;
+    height: 55px;
+  }
+
+  /* line 23, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-logo-shape-blue {
+    background-position: -83.33333px 0px;
+    width: 59.16667px;
+    height: 55px;
+  }
+
+  /* line 27, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-location {
+    background-position: -166.66667px 0px;
+    width: 166.66667px;
+    height: 46.66667px;
+  }
+
+  /* line 31, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-gokartsnyc-logo {
+    background-position: -350px 0px;
+    width: 119.16667px;
+    height: 44.16667px;
+  }
+
+  /* line 35, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-location-pointer {
+    background-position: -750px 0px;
+    width: 67.5px;
+    height: 81.66667px;
+  }
+
+  /* line 39, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-mochi-background {
+    background-position: -450px -416.66667px;
+    width: 220.83333px;
+    height: 220.83333px;
+  }
+
+  /* line 43, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-acegmr-background {
+    background-position: 0px -416.66667px;
+    width: 220.83333px;
+    height: 220.83333px;
+  }
+
+  /* line 47, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-gokartsnyc-background {
+    background-position: -225px -416.66667px;
+    width: 220.83333px;
+    height: 220.83333px;
+  }
+
+  /* line 52, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-map {
+    background-position: 0 -81.66667px;
+    width: 433.33333px;
+    height: 216.66667px;
+  }
+
+  /* line 56, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .divider {
+    background: url("/assets/app/divider-white.png") repeat-x;
+    height: 18px;
+  }
+
+  /* line 59, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .background-mask {
+    background: url("/assets/app/background-white.png") repeat;
+    background-size: 100px 100px;
+  }
+
+  /* line 3, ../../../app/assets/stylesheets/page/local_defaults/968_defaults.sass */
+  h1 {
+    font-size: 42px;
+    color: white;
+  }
+
+  /* line 7, ../../../app/assets/stylesheets/page/local_defaults/968_defaults.sass */
+  h3 {
+    font-size: 14px;
+  }
+
+  /* line 9, ../../../app/assets/stylesheets/page/local_defaults/968_defaults.sass */
+  h5 {
+    font-size: 13px;
+  }
+
+  /* line 12, ../../../app/assets/stylesheets/page/local_defaults/968_defaults.sass */
+  .h2 {
+    font-size: 40px !important;
+  }
+
+  /* line 14, ../../../app/assets/stylesheets/page/local_defaults/968_defaults.sass */
+  .h6 {
+    font-size: 16px;
+  }
+
+  /* =resize-transition-image */
+  /*   //+single-transition(all, 0.5s, false, false) */
+  /*   +transition-property(width, height) */
+  /*   +transition-duration(1s) */
+  /*   //x[ ease | linear | ease-in | ease-out | ease-in-out | cubic-bezier(x1, y1, x2, y2) */
+  /*   +transition-timing-function(ease-in) */
+  /*   //+transition-delay(0) */
+  /* =resize-transition-text */
+  /*   +transition-property(font-size) */
+  /*   +transition-duration(1s) */
+  /*   +transition-timing-function(ease-in) */
+  /* line 39, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .container {
+    width: 958px;
+    margin: 0 auto;
+    overflow: hidden;
+    *zoom: 1;
+  }
+
+  /* line 42, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .circle-wrapper {
+    display: inline-block;
+    width: 265px;
+    height: 265px;
+    border-radius: 50%;
+  }
+
+  /* line 45, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .background-light-gray {
+    background-color: #333333;
+  }
+
+  /* line 48, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .background-whitish {
+    background-color: #f9f9f9;
+  }
+
+  /* line 51, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body > div {
+    width: inherit;
+  }
+  /* line 53, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .logo {
+    display: inline;
+  }
+  /* line 57, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .header-divider {
+    height: 18px;
+    background-color: #4ab3d2;
+  }
+  /* line 61, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .header .container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  /* line 64, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .header .container .full-logo-wrapper {
+    padding-left: 30px;
+    display: inline;
+    float: left;
+    margin-right: 2px;
+    width: 238px;
+    /* .logo-wrapper
+     * /* +logo-image
+     * /* +logo-text */
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .content .header .container .full-logo-wrapper {
+    overflow-x: hidden;
+  }
+  /* line 67, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .header .container .full-logo-wrapper a {
+    display: inline-block;
+  }
+  /* line 72, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .header .container .location {
+    margin-top: 31px;
+    padding-left: 480px;
+    display: inline;
+    float: left;
+    margin-right: 2px;
+    width: 148px;
+    margin-right: 0;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .content .header .container .location {
+    overflow-x: hidden;
+  }
+  /* line 77, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .ideology {
+    margin-top: 20px;
+  }
+  /* line 80, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .ideology .container .content {
+    display: inline;
+    float: left;
+    margin-right: 2px;
+    width: 958px;
+    display: inline-block;
+    padding-left: 150px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .content .ideology .container .content {
+    overflow-x: hidden;
+  }
+  /* line 84, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .ideology .container .content ul.message {
+    margin-top: 55px;
+    display: inline;
+    float: left;
+    margin-right: 2px;
+    width: 238px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .content .ideology .container .content ul.message {
+    overflow-x: hidden;
+  }
+  /* line 87, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .ideology .container .content .map {
+    /* position: relative */
+    padding-left: 30px;
+    margin-top: 55px;
+    display: inline;
+    float: left;
+    margin-right: 2px;
+    width: 478px;
+    margin-right: 0;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .content .ideology .container .content .map {
+    overflow-x: hidden;
+  }
+  /* line 94, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .ideology .container .content .map .map-pointer {
+    position: relative;
+    bottom: 233px;
+    left: 89px;
+  }
+  /* line 98, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .ideology .container .content .map .map-pointer .icon-location-pointer {
+    position: relative;
+  }
+  /* line 100, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .ideology .container .content .map .map-pointer a.contact {
+    left: 63px;
+    bottom: 95px;
+    position: relative;
+  }
+  /* line 107, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .portfolio .container {
+    padding: 12px 0px;
+    position: relative;
+  }
+  /* line 110, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .portfolio .container h1.header {
+    padding-left: 390px;
+  }
+  /* line 112, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .portfolio .container .projects {
+    display: inline-block;
+    padding-left: 120px;
+  }
+  /* line 115, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .portfolio .container .projects .mochimochi {
+    position: relative;
+  }
+  /* line 117, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .portfolio .container .projects .mochimochi .wrapper {
+    position: relative;
+  }
+  /* line 123, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .footer {
+    border-top: 20px solid #4ab3d2;
+    background-color: white;
+    height: 100px;
+  }
+  /* line 127, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .footer .logo {
+    margin-top: 26px;
+    padding-left: 660px;
+    display: inline;
+    float: left;
+    margin-right: 2px;
+    width: 268px;
+    display: inline-block;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .footer .logo {
+    overflow-x: hidden;
+  }
+  /* line 138, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project {
+    margin-top: 10px;
+    display: inline;
+    float: left;
+    margin-right: 2px;
+    width: 838px;
+    margin-right: 0;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .projects .project {
+    overflow-x: hidden;
+  }
+  /* line 142, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project .logo-link {
+    position: relative;
+    display: inline-block;
+    display: inline;
+    float: left;
+  }
+  /* line 146, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project .logo-link .logo {
+    margin-top: -1px;
+    z-index: 10;
+    position: relative;
+    display: inline-block;
+  }
+  /* line 151, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project .content {
+    position: relative;
+    margin-top: 1px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+    display: inline;
+    float: left;
+    position: relative;
+    margin-left: -120px;
+    display: inline;
+    float: right;
+    height: 220px;
+    background-color: white;
+    display: inline;
+    float: left;
+    margin-right: 2px;
+    width: 628px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .projects .project .content {
+    overflow-x: hidden;
+  }
+  /* line 160, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project .content .header {
+    padding-left: 150px;
+    display: inline;
+    float: left;
+    margin-right: 2px;
+    width: 448px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .projects .project .content .header {
+    overflow-x: hidden;
+  }
+  /* line 163, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project .content .description {
+    padding-left: 150px;
+    display: inline;
+    float: left;
+    margin-right: 2px;
+    width: 448px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .projects .project .content .description {
+    overflow-x: hidden;
+  }
+  /* line 166, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project .content .links {
+    position: absolute;
+    right: 20px;
+    bottom: 0px;
+    /* +prepend(4) */
+    /* +column(15) */
+  }
+  /* line 172, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project .content .links .link {
+    display: inline;
+    float: left;
+  }
+  /* line 174, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project .content .links .link .info {
+    display: inline;
+    float: left;
+  }
+  /* line 176, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project .content .links .link .url {
+    padding-left: 5px;
+    display: inline;
+    float: right;
+  }
+}
+@media screen and (min-width: 1180px) {
+  /* line 8, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  [class^="icon-"], [class*=" icon-"] {
+    background: url("/assets/app/index-sprites-white.png") no-repeat;
+    background-size: 930.90909px 721.81818px;
+  }
+
+  /* line 11, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-full-logo {
+    background-position: -500px -272.72727px;
+    width: 272.72727px;
+    height: 114.54545px;
+  }
+
+  /* line 15, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-text-logo {
+    background-position: 0px -345.45455px;
+    width: 309.09091px;
+    height: 45.45455px;
+  }
+
+  /* line 19, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-logo-shape {
+    background-position: 0px 0px;
+    width: 64.54545px;
+    height: 60px;
+  }
+
+  /* line 23, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-logo-shape-blue {
+    background-position: -90.90909px 0px;
+    width: 64.54545px;
+    height: 60px;
+  }
+
+  /* line 27, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-location {
+    background-position: -181.81818px 0px;
+    width: 181.81818px;
+    height: 50.90909px;
+  }
+
+  /* line 31, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-gokartsnyc-logo {
+    background-position: -381.81818px 0px;
+    width: 130px;
+    height: 48.18182px;
+  }
+
+  /* line 35, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-location-pointer {
+    background-position: -818.18182px 0px;
+    width: 73.63636px;
+    height: 89.09091px;
+  }
+
+  /* line 39, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-mochi-background {
+    background-position: -490.90909px -454.54545px;
+    width: 240.90909px;
+    height: 240.90909px;
+  }
+
+  /* line 43, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-acegmr-background {
+    background-position: 0px -454.54545px;
+    width: 240.90909px;
+    height: 240.90909px;
+  }
+
+  /* line 47, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-gokartsnyc-background {
+    background-position: -245.45455px -454.54545px;
+    width: 240.90909px;
+    height: 240.90909px;
+  }
+
+  /* line 52, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-map {
+    background-position: 0 -89.09091px;
+    width: 472.72727px;
+    height: 236.36364px;
+  }
+
+  /* line 56, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .divider {
+    background: url("/assets/app/divider-white.png") repeat-x;
+    height: 18px;
+  }
+
+  /* line 59, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .background-mask {
+    background: url("/assets/app/background-white.png") repeat;
+    background-size: 100px 100px;
+  }
+
+  /* line 3, ../../../app/assets/stylesheets/page/local_defaults/1180_defaults.sass */
+  h1 {
+    font-size: 45px;
+    color: white;
+  }
+
+  /* line 7, ../../../app/assets/stylesheets/page/local_defaults/1180_defaults.sass */
+  h3 {
+    font-size: 18px;
+  }
+
+  /* line 9, ../../../app/assets/stylesheets/page/local_defaults/1180_defaults.sass */
+  h5 {
+    font-size: 17px;
+  }
+
+  /* line 12, ../../../app/assets/stylesheets/page/local_defaults/1180_defaults.sass */
+  .h2 {
+    font-size: 45px !important;
+  }
+
+  /* line 14, ../../../app/assets/stylesheets/page/local_defaults/1180_defaults.sass */
+  .h6 {
+    font-size: 18px;
+  }
+
+  /* =resize-transition-image */
+  /*   //+single-transition(all, 0.5s, false, false) */
+  /*   +transition-property(width, height) */
+  /*   +transition-duration(1s) */
+  /*   //x[ ease | linear | ease-in | ease-out | ease-in-out | cubic-bezier(x1, y1, x2, y2) */
+  /*   +transition-timing-function(ease-in) */
+  /*   //+transition-delay(0) */
+  /* =resize-transition-text */
+  /*   +transition-property(font-size) */
+  /*   +transition-duration(1s) */
+  /*   +transition-timing-function(ease-in) */
+  /* line 39, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .container {
+    width: 1181px;
+    margin: 0 auto;
+    overflow: hidden;
+    *zoom: 1;
+  }
+
+  /* line 42, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .circle-wrapper {
+    display: inline-block;
+    width: 265px;
+    height: 265px;
+    border-radius: 50%;
+  }
+
+  /* line 45, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .background-light-gray {
+    background-color: #333333;
+  }
+
+  /* line 48, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .background-whitish {
+    background-color: #f9f9f9;
+  }
+
+  /* line 51, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body > div {
+    width: inherit;
+  }
+  /* line 53, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .logo {
+    display: inline;
+  }
+  /* line 57, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .header-divider {
+    height: 18px;
+    background-color: #4ab3d2;
+  }
+  /* line 61, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .header .container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  /* line 64, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .header .container .full-logo-wrapper {
+    padding-left: 37px;
+    display: inline;
+    float: left;
+    margin-right: 3px;
+    width: 293px;
+    /* .logo-wrapper
+     * /* +logo-image
+     * /* +logo-text */
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .content .header .container .full-logo-wrapper {
+    overflow-x: hidden;
+  }
+  /* line 67, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .header .container .full-logo-wrapper a {
+    display: inline-block;
+  }
+  /* line 72, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .header .container .location {
+    margin-top: 31px;
+    padding-left: 592px;
+    display: inline;
+    float: left;
+    margin-right: 3px;
+    width: 182px;
+    margin-right: 0;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .content .header .container .location {
+    overflow-x: hidden;
+  }
+  /* line 77, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .ideology {
+    margin-top: 20px;
+  }
+  /* line 80, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .ideology .container .content {
+    display: inline;
+    float: left;
+    margin-right: 3px;
+    width: 1181px;
+    display: inline-block;
+    padding-left: 185px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .content .ideology .container .content {
+    overflow-x: hidden;
+  }
+  /* line 84, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .ideology .container .content ul.message {
+    margin-top: 35px;
+    display: inline;
+    float: left;
+    margin-right: 3px;
+    width: 293px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .content .ideology .container .content ul.message {
+    overflow-x: hidden;
+  }
+  /* line 87, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .ideology .container .content .map {
+    /* position: relative */
+    padding-left: 37px;
+    margin-top: 40px;
+    display: inline;
+    float: left;
+    margin-right: 3px;
+    width: 589px;
+    margin-right: 0;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .content .ideology .container .content .map {
+    overflow-x: hidden;
+  }
+  /* line 94, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .ideology .container .content .map .map-pointer {
+    position: relative;
+    bottom: 255px;
+    left: 99px;
+  }
+  /* line 98, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .ideology .container .content .map .map-pointer .icon-location-pointer {
+    position: relative;
+  }
+  /* line 100, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .ideology .container .content .map .map-pointer a.contact {
+    left: 70px;
+    bottom: 105px;
+    position: relative;
+  }
+  /* line 107, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .portfolio .container {
+    padding: 12px 0px;
+    position: relative;
+  }
+  /* line 110, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .portfolio .container h1.header {
+    padding-left: 481px;
+  }
+  /* line 112, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .portfolio .container .projects {
+    display: inline-block;
+    padding-left: 148px;
+  }
+  /* line 115, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .portfolio .container .projects .mochimochi {
+    position: relative;
+  }
+  /* line 117, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .portfolio .container .projects .mochimochi .wrapper {
+    position: relative;
+  }
+  /* line 123, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .footer {
+    border-top: 20px solid #4ab3d2;
+    background-color: white;
+    height: 100px;
+  }
+  /* line 127, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .footer .logo {
+    margin-top: 25px;
+    padding-left: 814px;
+    display: inline;
+    float: left;
+    margin-right: 3px;
+    width: 330px;
+    display: inline-block;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .footer .logo {
+    overflow-x: hidden;
+  }
+  /* line 138, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project {
+    margin-top: 10px;
+    display: inline;
+    float: left;
+    margin-right: 3px;
+    width: 1033px;
+    margin-right: 0;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .projects .project {
+    overflow-x: hidden;
+  }
+  /* line 142, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project .logo-link {
+    position: relative;
+    display: inline-block;
+    display: inline;
+    float: left;
+  }
+  /* line 146, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project .logo-link .logo {
+    margin-top: -1px;
+    z-index: 10;
+    position: relative;
+    display: inline-block;
+  }
+  /* line 151, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project .content {
+    position: relative;
+    margin-top: 1px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+    display: inline;
+    float: left;
+    position: relative;
+    margin-left: -148px;
+    display: inline;
+    float: right;
+    height: 239px;
+    background-color: white;
+    display: inline;
+    float: left;
+    margin-right: 3px;
+    width: 774px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .projects .project .content {
+    overflow-x: hidden;
+  }
+  /* line 160, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project .content .header {
+    padding-left: 185px;
+    display: inline;
+    float: left;
+    margin-right: 3px;
+    width: 552px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .projects .project .content .header {
+    overflow-x: hidden;
+  }
+  /* line 163, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project .content .description {
+    padding-left: 185px;
+    display: inline;
+    float: left;
+    margin-right: 3px;
+    width: 552px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .projects .project .content .description {
+    overflow-x: hidden;
+  }
+  /* line 166, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project .content .links {
+    position: absolute;
+    right: 20px;
+    bottom: 0px;
+    /* +prepend(4) */
+    /* +column(15) */
+  }
+  /* line 172, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project .content .links .link {
+    display: inline;
+    float: left;
+  }
+  /* line 174, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project .content .links .link .info {
+    display: inline;
+    float: left;
+  }
+  /* line 176, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project .content .links .link .url {
+    padding-left: 5px;
+    display: inline;
+    float: right;
+  }
+}
+@media screen and (min-width: 1281px) {
+  /* line 8, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  [class^="icon-"], [class*=" icon-"] {
+    background: url("/assets/app/index-sprites-white.png") no-repeat;
+    background-size: 1024px 794px;
+  }
+
+  /* line 11, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-full-logo {
+    background-position: -550px -300px;
+    width: 300px;
+    height: 126px;
+  }
+
+  /* line 15, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-text-logo {
+    background-position: 0px -380px;
+    width: 340px;
+    height: 50px;
+  }
+
+  /* line 19, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-logo-shape {
+    background-position: 0px 0px;
+    width: 71px;
+    height: 66px;
+  }
+
+  /* line 23, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-logo-shape-blue {
+    background-position: -100px 0px;
+    width: 71px;
+    height: 66px;
+  }
+
+  /* line 27, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-location {
+    background-position: -200px 0px;
+    width: 200px;
+    height: 56px;
+  }
+
+  /* line 31, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-gokartsnyc-logo {
+    background-position: -420px 0px;
+    width: 143px;
+    height: 53px;
+  }
+
+  /* line 35, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-location-pointer {
+    background-position: -900px 0px;
+    width: 81px;
+    height: 98px;
+  }
+
+  /* line 39, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-mochi-background {
+    background-position: -540px -500px;
+    width: 265px;
+    height: 265px;
+  }
+
+  /* line 43, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-acegmr-background {
+    background-position: 0px -500px;
+    width: 265px;
+    height: 265px;
+  }
+
+  /* line 47, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-gokartsnyc-background {
+    background-position: -270px -500px;
+    width: 265px;
+    height: 265px;
+  }
+
+  /* line 52, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-map {
+    background-position: 0 -98px;
+    width: 520px;
+    height: 260px;
+  }
+
+  /* line 56, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .divider {
+    background: url("/assets/app/divider-white.png") repeat-x;
+    height: 18px;
+  }
+
+  /* line 59, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .background-mask {
+    background: url("/assets/app/background-white.png") repeat;
+    background-size: 100px 100px;
+  }
+
+  /* line 3, ../../../app/assets/stylesheets/page/local_defaults/1281_defaults.sass */
+  h1 {
+    font-size: 50px;
+    color: white;
+  }
+
+  /* line 7, ../../../app/assets/stylesheets/page/local_defaults/1281_defaults.sass */
+  h3 {
+    font-size: 19px;
+  }
+
+  /* line 9, ../../../app/assets/stylesheets/page/local_defaults/1281_defaults.sass */
+  h5 {
+    font-size: 18px;
+  }
+
+  /* line 12, ../../../app/assets/stylesheets/page/local_defaults/1281_defaults.sass */
+  .h2 {
+    font-size: 50px !important;
+  }
+
+  /* line 14, ../../../app/assets/stylesheets/page/local_defaults/1281_defaults.sass */
+  .h6 {
+    font-size: 18px;
+  }
+
+  /* =resize-transition-image */
+  /*   //+single-transition(all, 0.5s, false, false) */
+  /*   +transition-property(width, height) */
+  /*   +transition-duration(1s) */
+  /*   //x[ ease | linear | ease-in | ease-out | ease-in-out | cubic-bezier(x1, y1, x2, y2) */
+  /*   +transition-timing-function(ease-in) */
+  /*   //+transition-delay(0) */
+  /* =resize-transition-text */
+  /*   +transition-property(font-size) */
+  /*   +transition-duration(1s) */
+  /*   +transition-timing-function(ease-in) */
+  /* line 39, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .container {
+    width: 1276px;
+    margin: 0 auto;
+    overflow: hidden;
+    *zoom: 1;
+  }
+
+  /* line 42, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .circle-wrapper {
+    display: inline-block;
+    width: 265px;
+    height: 265px;
+    border-radius: 50%;
+  }
+
+  /* line 45, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .background-light-gray {
+    background-color: #333333;
+  }
+
+  /* line 48, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .background-whitish {
+    background-color: #f9f9f9;
+  }
+
+  /* line 51, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body > div {
+    width: inherit;
+  }
+  /* line 53, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .logo {
+    display: inline;
+  }
+  /* line 57, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .header-divider {
+    height: 18px;
+    background-color: #4ab3d2;
+  }
+  /* line 61, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .header .container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  /* line 64, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .header .container .full-logo-wrapper {
+    padding-left: 40px;
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 316px;
+    /* .logo-wrapper
+     * /* +logo-image
+     * /* +logo-text */
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .content .header .container .full-logo-wrapper {
+    overflow-x: hidden;
+  }
+  /* line 67, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .header .container .full-logo-wrapper a {
+    display: inline-block;
+  }
+  /* line 72, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .header .container .location {
+    margin-top: 31px;
+    padding-left: 640px;
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 196px;
+    margin-right: 0;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .content .header .container .location {
+    overflow-x: hidden;
+  }
+  /* line 77, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .ideology {
+    margin-top: 0px;
+  }
+  /* line 80, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .ideology .container .content {
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 1276px;
+    display: inline-block;
+    padding-left: 200px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .content .ideology .container .content {
+    overflow-x: hidden;
+  }
+  /* line 84, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .ideology .container .content ul.message {
+    margin-top: 35px;
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 316px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .content .ideology .container .content ul.message {
+    overflow-x: hidden;
+  }
+  /* line 87, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .ideology .container .content .map {
+    /* position: relative */
+    padding-left: 40px;
+    margin-top: 40px;
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 636px;
+    margin-right: 0;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .content .ideology .container .content .map {
+    overflow-x: hidden;
+  }
+  /* line 94, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .ideology .container .content .map .map-pointer {
+    position: relative;
+    bottom: 280px;
+    left: 109px;
+  }
+  /* line 98, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .ideology .container .content .map .map-pointer .icon-location-pointer {
+    position: relative;
+  }
+  /* line 100, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .ideology .container .content .map .map-pointer a.contact {
+    left: 78px;
+    bottom: 112px;
+    position: relative;
+  }
+  /* line 107, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .portfolio .container {
+    padding: 12px 0px;
+    position: relative;
+  }
+  /* line 110, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .portfolio .container h1.header {
+    padding-left: 520px;
+  }
+  /* line 112, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .portfolio .container .projects {
+    display: inline-block;
+    padding-left: 160px;
+  }
+  /* line 115, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .portfolio .container .projects .mochimochi {
+    position: relative;
+  }
+  /* line 117, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .portfolio .container .projects .mochimochi .wrapper {
+    position: relative;
+  }
+  /* line 123, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .footer {
+    border-top: 20px solid #4ab3d2;
+    background-color: white;
+    height: 100px;
+  }
+  /* line 127, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .footer .logo {
+    margin-top: 22px;
+    padding-left: 880px;
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 356px;
+    display: inline-block;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .footer .logo {
+    overflow-x: hidden;
+  }
+  /* line 138, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project {
+    margin-top: 10px;
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 1116px;
+    margin-right: 0;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .projects .project {
+    overflow-x: hidden;
+  }
+  /* line 142, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project .logo-link {
+    position: relative;
+    display: inline-block;
+    display: inline;
+    float: left;
+  }
+  /* line 146, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project .logo-link .logo {
+    margin-top: -1px;
+    z-index: 10;
+    position: relative;
+    display: inline-block;
+  }
+  /* line 151, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project .content {
+    position: relative;
+    margin-top: 1px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+    display: inline;
+    float: left;
+    position: relative;
+    margin-left: -160px;
+    display: inline;
+    float: right;
+    height: 264px;
+    background-color: white;
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 836px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .projects .project .content {
+    overflow-x: hidden;
+  }
+  /* line 160, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project .content .header {
+    padding-left: 200px;
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 596px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .projects .project .content .header {
+    overflow-x: hidden;
+  }
+  /* line 163, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project .content .description {
+    padding-left: 200px;
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 596px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .projects .project .content .description {
+    overflow-x: hidden;
+  }
+  /* line 166, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project .content .links {
+    position: absolute;
+    right: 20px;
+    bottom: 0px;
+    /* +prepend(4) */
+    /* +column(15) */
+  }
+  /* line 172, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project .content .links .link {
+    display: inline;
+    float: left;
+  }
+  /* line 174, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project .content .links .link .info {
+    display: inline;
+    float: left;
+  }
+  /* line 176, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .projects .project .content .links .link .url {
+    padding-left: 5px;
+    display: inline;
+    float: right;
+  }
+}
+	/*
+ * This is a manifest file that'll be compiled into admin.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ * require_tree ./vendor
+
+ * require 'batch'
+ * require font-awesome
+*/
+
