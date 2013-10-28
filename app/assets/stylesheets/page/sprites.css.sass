@@ -1,6 +1,24 @@
 @function newPosition($pOriginalSize, $pNewSize, $pOriginalPosition)
   @return ($pNewSize / $pOriginalSize) * $pOriginalPosition
 
+@function updateSize($pSize, $pDivider)
+  @return $pSize * $pDivider
+
+=generateIcon($pName, $pWidth, $pHeight, $pDivider)
+  height: updateSize($pHeight, $pDivider)
+  width: updateSize($pWidth, $pDivider)
+  background: url("/assets/icons/#{ $pName }") no-repeat
+  background-size: updateSize($pWidth, $pDivider) updateSize($pHeight, $pDivider)
+
+=generateDivider($pName, $pWidth, $pHeight, $pDivider)
+  height: updateSize($pHeight, $pDivider)
+  width: updateSize($pWidth, $pDivider)
+  background: url("/assets/app/#{ $pName }") repeat-x
+  background-size: updateSize($pWidth, $pDivider) updateSize($pHeight, $pDivider)
+
+
+
+
 
 =generate-index-sprites($pWidth, $pHeight)
   $Width: 1024px
@@ -12,50 +30,35 @@
     background-position: newPosition($Width, $pWidth, -550px) newPosition($Height, $pHeight, -300px)
     width: newPosition($Width, $pWidth, 300px)
     height: newPosition($Width, $pWidth, 126px)
-  .icon-text-logo
-    background-position: newPosition($Width, $pWidth, 0px) newPosition($Height, $pHeight, -380px)
-    width: newPosition($Width, $pWidth, 340px)
-    height: newPosition($Width, $pWidth, 50px)
-  .icon-logo-shape
-    background-position: newPosition($Width, $pWidth, 0px) newPosition($Height, $pHeight, 0px)
-    width: newPosition($Width, $pWidth, 71px)
-    height: newPosition($Width, $pWidth, 66px)
-  .icon-logo-shape-blue
-    background-position: newPosition($Width, $pWidth, -100px) newPosition($Height, $pHeight, 0px)
-    width: newPosition($Width, $pWidth, 71px)
-    height: newPosition($Width, $pWidth, 66px)
-  .icon-location
-    background-position: newPosition($Width, $pWidth, -200px) newPosition($Height, $pHeight, 0px)
-    width: newPosition($Width, $pWidth, 200px)
-    height: newPosition($Width, $pWidth, 56px)
-  .icon-gokartsnyc-logo
-    background-position: newPosition($Width, $pWidth, -420px) newPosition($Height, $pHeight, 0px)
-    width: newPosition($Width, $pWidth, 143px)
-    height: newPosition($Width, $pWidth, 53px)
-  .icon-location-pointer
-    background-position: newPosition($Width, $pWidth, -900px) newPosition($Height, $pHeight, 0px)
-    width: newPosition($Width, $pWidth, 81px)
-    height: newPosition($Width, $pWidth, 98px)
-  .icon-mochi-background
-    background-position: newPosition($Width, $pWidth, -540px) newPosition($Height, $pHeight, -500px)
-    width: newPosition($Width, $pWidth, 265px)
-    height: newPosition($Width, $pWidth, 265px)
-  .icon-acegmr-background
-    background-position: newPosition($Width, $pWidth, 0px) newPosition($Height, $pHeight, -500px)
-    width: newPosition($Width, $pWidth, 265px)
-    height: newPosition($Width, $pWidth, 265px)
-  .icon-gokartsnyc-background
-    background-position: newPosition($Width, $pWidth, -270px) newPosition($Height, $pHeight, -500px)
-    width: newPosition($Width, $pWidth, 265px)
-    height: newPosition($Width, $pWidth, 265px)
 
-  .icon-map
-    background-position: newPosition($Width, $pWidth, 0) newPosition($Height, $pHeight, -98px)
-    width: newPosition($Width, $pWidth, 520px)
-    height: newPosition($Width, $pWidth, 260px)
-  .divider
-    background: url("/assets/app/divider-white.png") repeat-x
-    height: 18px
-  .background-mask
-    background: url("/assets/app/background-white.png") repeat
-    background-size: 100px 100px
+
+=generate-index-icons($pDivider)
+  [class^="icon-"], [class*=" icon-"]
+  .icon-divider
+    +generateDivider("divider_gray.png", 50px, 24px, $pDivider)
+  .icon-short-logo
+    +generateIcon("short_logo.jpg", 216px, 78px, $pDivider)
+  .icon-mochi-pink
+    +generateIcon("mochi_pink.jpg", 382px, 350px, $pDivider)
+  .icon-android-devices
+    +generateIcon("androids.jpg", 516px, 427px, $pDivider)
+  .icon-ios-devices
+    +generateIcon("iphones.jpg", 414px, 448px, $pDivider)
+  .icon-facebook-gameplay
+    +generateIcon("facebook_gameplay.jpg", 533px, 308px, $pDivider)
+  .icon-guy-pink
+    +generateIcon("man_pink_shirt.jpg", 300px, 600px, $pDivider)
+  .icon-girl-green
+    +generateIcon("girl_green_shirt.jpg", 300px, 550px, $pDivider)
+  .icon-girl-pink
+    +generateIcon("girl_pink_shirt.jpg", 300px, 550px, $pDivider)
+  .icon-guy-blue
+    +generateIcon("man_blue_shirt.jpg", 300px, 600px, $pDivider)
+  .icon-pink-green-shirts
+    +generateIcon("pink_shirt_green_shirt.jpg", 504px, 608px, $pDivider)
+  .icon-pink-blue-shirts
+    +generateIcon("pink_shirt_blue_shirt.jpg", 524px, 608px, $pDivider)
+  .icon-mochi-pink-small
+    +generateIcon("mochi_pink_small.jpg", 100px, 91px, $pDivider)
+  .icon-design-by-9wave
+    +generateIcon("designed_by_logo.jpg", 214px, 58px, $pDivider)
