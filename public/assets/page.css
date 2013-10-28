@@ -1,0 +1,876 @@
+@import url(http://fonts.googleapis.com/css?family=Quicksand:300,400|Days+One);
+/* line 15, ../../../app/assets/stylesheets/page/defaults.css.sass */
+.green {
+  color: #86ab66;
+}
+
+/* line 17, ../../../app/assets/stylesheets/page/defaults.css.sass */
+.yellow {
+  color: #eba438;
+}
+
+/* line 19, ../../../app/assets/stylesheets/page/defaults.css.sass */
+.blue {
+  color: #4ab3d2;
+}
+
+/* line 21, ../../../app/assets/stylesheets/page/defaults.css.sass */
+.purple {
+  color: #9b59b6;
+}
+
+/* line 25, ../../../app/assets/stylesheets/page/defaults.css.sass */
+ul.clean {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 30, ../../../app/assets/stylesheets/page/defaults.css.sass */
+body {
+  font-family: "Days One";
+  background-color: whitesmoke;
+  margin: 0px;
+}
+
+/* line 36, ../../../app/assets/stylesheets/page/defaults.css.sass */
+h1 {
+  font-weight: 300;
+  font-size: 60px;
+  font-family: "Days One", sans-serif;
+  color: #333333;
+  word-spacing: -3px;
+  letter-spacing: 0px;
+  margin: 0.6em 0em 0.5em 0em;
+}
+
+/* line 45, ../../../app/assets/stylesheets/page/defaults.css.sass */
+h2 {
+  font-size: 40px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  color: #999999;
+  line-height: 50px;
+  margin: 0.2em 0em 0.2em 0em;
+  letter-spacing: -3px;
+}
+
+/* line 54, ../../../app/assets/stylesheets/page/defaults.css.sass */
+h3 {
+  font-weight: 300;
+  font-size: 25px;
+  font-family: "Days One", sans-serif;
+  color: #333333;
+  word-spacing: -3px;
+  letter-spacing: 0px;
+  margin: 0.6em 0em 0.5em 0em;
+  color: #222222;
+}
+
+/* line 65, ../../../app/assets/stylesheets/page/defaults.css.sass */
+h4 {
+  font-size: 25px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  color: #999999;
+  line-height: 30px;
+  margin: 0.2em 0em 0.2em 0em;
+  letter-spacing: -1xpx;
+}
+
+/* line 73, ../../../app/assets/stylesheets/page/defaults.css.sass */
+h5 {
+  font-size: 35px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  color: #999999;
+  line-height: 40px;
+  margin: 0.2em 0em 0.2em 0em;
+  letter-spacing: -1px;
+}
+
+/* line 82, ../../../app/assets/stylesheets/page/defaults.css.sass */
+h6, .h6 {
+  font-size: 18px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  color: #333333;
+  line-height: 26px;
+  margin: 0.2em 0em 0.2em 0em;
+}
+
+/* line 91, ../../../app/assets/stylesheets/page/defaults.css.sass */
+.text {
+  font-size: 30px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 300;
+  color: #999999;
+  line-height: 30px;
+  margin: 0.2em 0em 0.2em 0em;
+  letter-spacing: -1px;
+}
+
+/* line 100, ../../../app/assets/stylesheets/page/defaults.css.sass */
+.section {
+  margin-bottom: 30px;
+}
+
+/* line 103, ../../../app/assets/stylesheets/page/defaults.css.sass */
+.link {
+  color: #6688cc;
+}
+
+/* line 105, ../../../app/assets/stylesheets/page/defaults.css.sass */
+a.clean {
+  text-decoration: none;
+}
+
+/* /* Smartphones (portrait and landscape) ----------- */
+/* @media only screen */
+/* and (min-device-width : 320px) */
+/* and (max-device-width : 480px) { */
+/* /* Styles */
+/* } */
+/* /* Smartphones (landscape) ----------- */
+/* @media only screen */
+/* and (min-width : 321px) { */
+/* /* Styles */
+/* } */
+/* /* Smartphones (portrait) ----------- */
+/* @media only screen */
+/* and (max-width : 320px) { */
+/* /* Styles */
+/* } */
+/* /* iPads (portrait and landscape) ----------- */
+/* @media only screen */
+/* and (min-device-width : 768px) */
+/* and (max-device-width : 1024px) { */
+/* /* Styles */
+/* } */
+/* /* iPads (landscape) ----------- */
+/* @media only screen */
+/* and (min-device-width : 768px) */
+/* and (max-device-width : 1024px) */
+/* and (orientation : landscape) { */
+/* /* Styles */
+/* } */
+/* /* iPads (portrait) ----------- */
+/* @media only screen */
+/* and (min-device-width : 768px) */
+/* and (max-device-width : 1024px) */
+/* and (orientation : portrait) { */
+/* /* Styles */
+/* } */
+/* /* Desktops and laptops ----------- */
+/* @media only screen */
+/* and (min-width : 1224px) { */
+/* /* Styles */
+/* } */
+/* /* Large screens ----------- */
+/* @media only screen */
+/* and (min-width : 1824px) { */
+/* /* Styles */
+/* } */
+/* /* iPhone 4 ----------- */
+/* @media */
+/* only screen and (-webkit-min-device-pixel-ratio : 1.5), */
+/* only screen and (min-device-pixel-ratio : 1.5) { */
+/* /* Styles */
+/* } */
+/* @media screen and (min-width: 0px) */
+/*   +pixels1280 */
+/*   @import ./layout */
+/*   body */
+/*     +layout */
+/* @media screen and (min-width: 0px) */
+/*   +grid-config(32, 26px, 4px) */
+/*   +generate-index-icons(1) */
+/*   @import ./local_defaults/0_defaults */
+/*   @import ./layout */
+/*   body */
+/*     +layout */
+/* @media screen and (min-width: 968px) */
+/*   +grid-config(32, 28px, 2px) */
+/*   +generate-index-sprites( 1024px / 1.2, 794px / 1.2) */
+/*   $Id: $Blue */
+/*   @import ./local_defaults/968_defaults */
+/*   @import ./layout */
+/*   body */
+/*     +layout */
+/* @media screen and (min-width: 1180px) */
+/*   +grid-config(32, 34px, 3px) */
+/*   +generate-index-sprites( 1024px / 1.1, 794px / 1.1) */
+/*   $Id: $Blue */
+/*   @import ./local_defaults/1180_defaults */
+/*   @import ./layout */
+/*   body */
+/*     +layout */
+@media screen and (min-width: 1340px) {
+  /* line 37, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-divider {
+    height: 22.8px;
+    width: 47.5px;
+    background: url("/assets/app/divider_gray.png") repeat-x;
+    background-size: 47.5px 22.8px;
+  }
+
+  /* line 39, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-short-logo {
+    height: 74.1px;
+    width: 205.2px;
+    background: url("/assets/icons/short_logo.jpg") no-repeat;
+    background-size: 205.2px 74.1px;
+  }
+
+  /* line 41, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-mochi-pink {
+    height: 332.5px;
+    width: 362.9px;
+    background: url("/assets/icons/mochi_pink.jpg") no-repeat;
+    background-size: 362.9px 332.5px;
+  }
+
+  /* line 43, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-android-devices {
+    height: 405.65px;
+    width: 490.2px;
+    background: url("/assets/icons/androids.jpg") no-repeat;
+    background-size: 490.2px 405.65px;
+  }
+
+  /* line 45, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-ios-devices {
+    height: 425.6px;
+    width: 393.3px;
+    background: url("/assets/icons/iphones.jpg") no-repeat;
+    background-size: 393.3px 425.6px;
+  }
+
+  /* line 47, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-facebook-gameplay {
+    height: 292.6px;
+    width: 506.35px;
+    background: url("/assets/icons/facebook_gameplay.jpg") no-repeat;
+    background-size: 506.35px 292.6px;
+  }
+
+  /* line 49, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-guy-pink {
+    height: 570px;
+    width: 285px;
+    background: url("/assets/icons/man_pink_shirt.jpg") no-repeat;
+    background-size: 285px 570px;
+  }
+
+  /* line 51, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-girl-green {
+    height: 522.5px;
+    width: 285px;
+    background: url("/assets/icons/girl_green_shirt.jpg") no-repeat;
+    background-size: 285px 522.5px;
+  }
+
+  /* line 53, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-girl-pink {
+    height: 522.5px;
+    width: 285px;
+    background: url("/assets/icons/girl_pink_shirt.jpg") no-repeat;
+    background-size: 285px 522.5px;
+  }
+
+  /* line 55, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-guy-blue {
+    height: 570px;
+    width: 285px;
+    background: url("/assets/icons/man_blue_shirt.jpg") no-repeat;
+    background-size: 285px 570px;
+  }
+
+  /* line 57, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-pink-green-shirts {
+    height: 577.6px;
+    width: 478.8px;
+    background: url("/assets/icons/pink_shirt_green_shirt.jpg") no-repeat;
+    background-size: 478.8px 577.6px;
+  }
+
+  /* line 59, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-pink-blue-shirts {
+    height: 577.6px;
+    width: 497.8px;
+    background: url("/assets/icons/pink_shirt_blue_shirt.jpg") no-repeat;
+    background-size: 497.8px 577.6px;
+  }
+
+  /* line 61, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-mochi-pink-small {
+    height: 86.45px;
+    width: 95px;
+    background: url("/assets/icons/mochi_pink_small.jpg") no-repeat;
+    background-size: 95px 86.45px;
+  }
+
+  /* line 63, ../../../app/assets/stylesheets/page/sprites.css.sass */
+  .icon-design-by-9wave {
+    height: 55.1px;
+    width: 203.3px;
+    background: url("/assets/icons/designed_by_logo.jpg") no-repeat;
+    background-size: 203.3px 55.1px;
+  }
+
+  /* line 1, ../../../app/assets/stylesheets/page/local_defaults/1340_defaults.sass */
+  h1 {
+    font-size: 58px;
+    color: #555555;
+    margin: 0.6em 0em 0.2em 0em;
+  }
+
+  /* line 5, ../../../app/assets/stylesheets/page/local_defaults/1340_defaults.sass */
+  h2 {
+    margin: 0.2em 0em 0.2em 0em;
+  }
+
+  /* line 7, ../../../app/assets/stylesheets/page/local_defaults/1340_defaults.sass */
+  h3 {
+    font-size: 30px;
+  }
+
+  /* line 10, ../../../app/assets/stylesheets/page/local_defaults/1340_defaults.sass */
+  h5 {
+    font-size: 30px;
+    margin: 0.2em 0em 1em 0em;
+  }
+
+  /* line 14, ../../../app/assets/stylesheets/page/local_defaults/1340_defaults.sass */
+  .h2 {
+    font-size: 39px !important;
+  }
+
+  /* line 16, ../../../app/assets/stylesheets/page/local_defaults/1340_defaults.sass */
+  .h6 {
+    font-size: 15px;
+  }
+
+  /* line 19, ../../../app/assets/stylesheets/page/local_defaults/1340_defaults.sass */
+  .text {
+    font-size: 25px;
+    font-family: "Quicksand", sans-serif;
+    line-height: 30px;
+  }
+
+  /* line 1, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body {
+    background-color: #f9f9f9;
+  }
+
+  /* line 4, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .container {
+    background-color: white;
+    width: 1292px;
+    margin: 0 auto;
+    overflow: hidden;
+    *zoom: 1;
+    -webkit-box-shadow: left rgba(128, 128, 128, 0.4) 0 0 25px, rgba(128, 128, 128, 0.2) 0 0 3px 1px inset;
+    -moz-box-shadow: left rgba(128, 128, 128, 0.4) 0 0 25px, rgba(128, 128, 128, 0.2) 0 0 3px 1px inset;
+    box-shadow: left rgba(128, 128, 128, 0.4) 0 0 25px, rgba(128, 128, 128, 0.2) 0 0 3px 1px inset;
+    -webkit-box-shadow: right rgba(128, 128, 128, 0.4) 0 0 25px, rgba(128, 128, 128, 0.2) 0 0 3px 1px inset;
+    -moz-box-shadow: right rgba(128, 128, 128, 0.4) 0 0 25px, rgba(128, 128, 128, 0.2) 0 0 3px 1px inset;
+    box-shadow: right rgba(128, 128, 128, 0.4) 0 0 25px, rgba(128, 128, 128, 0.2) 0 0 3px 1px inset;
+  }
+
+  /* line 9, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .wrapper {
+    display: inline-block;
+  }
+
+  /* line 12, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .new-section {
+    margin-top: 60px;
+    padding-left: 72px;
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 1184px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .new-section {
+    overflow-x: hidden;
+  }
+
+  /* line 16, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .divider-wrapper {
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 1292px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .divider-wrapper {
+    overflow-x: hidden;
+  }
+  /* line 18, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .divider-wrapper .icon-divider {
+    width: inherit;
+  }
+
+  /* line 80, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .game-content .container .wrapper {
+    position: relative;
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 896px;
+    padding-left: 198px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .game-content .container .wrapper {
+    overflow-x: hidden;
+  }
+  /* line 86, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .game-content .container .wrapper .video-container {
+    padding: 20px;
+    -webkit-box-shadow: 0px 0px 5px #333333;
+    -moz-box-shadow: 0px 0px 5px #333333;
+    box-shadow: 0px 0px 5px #333333;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+  }
+  /* line 90, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .game-content .container .wrapper .mask-wrapper {
+    position: absolute;
+    top: 0px;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+    opacity: 0.6;
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 896px;
+    height: 520px;
+    background-color: white;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .game-content .container .wrapper .mask-wrapper {
+    overflow-x: hidden;
+  }
+  /* line 98, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .game-content .container .wrapper h1 {
+    position: absolute;
+    top: 0px;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    opacity: 0.8;
+    color: white;
+    padding-left: 252px;
+    margin-top: 250px;
+    -webkit-transform: rotate(-28deg);
+    -moz-transform: rotate(-28deg);
+    -ms-transform: rotate(-28deg);
+    -o-transform: rotate(-28deg);
+    transform: rotate(-28deg);
+  }
+
+  /* line 110, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .platform-content .container .android.wrapper {
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 1148px;
+    padding-left: 108px;
+    margin-top: 75px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .platform-content .container .android.wrapper {
+    overflow-x: hidden;
+  }
+  /* line 114, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .platform-content .container .android.wrapper .text-section {
+    margin-top: 50px;
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 536px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .platform-content .container .android.wrapper .text-section {
+    overflow-x: hidden;
+  }
+  /* line 119, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .platform-content .container .android.wrapper .image-section {
+    padding-left: 72px;
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 464px;
+    min-height: 1px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .platform-content .container .android.wrapper .image-section {
+    overflow-x: hidden;
+  }
+  /* line 123, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .platform-content .container .iphone.wrapper {
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 1148px;
+    padding-left: 108px;
+    margin-top: 50px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .platform-content .container .iphone.wrapper {
+    overflow-x: hidden;
+  }
+  /* line 127, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .platform-content .container .iphone.wrapper .image-section {
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 536px;
+    min-height: 1px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .platform-content .container .iphone.wrapper .image-section {
+    overflow-x: hidden;
+  }
+  /* line 130, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .platform-content .container .iphone.wrapper .text-section {
+    margin-top: 60px;
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 536px;
+    min-height: 1px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .platform-content .container .iphone.wrapper .text-section {
+    overflow-x: hidden;
+  }
+  /* line 136, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .platform-content .container .facebook.wrapper {
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 1148px;
+    padding-left: 108px;
+    margin-top: 40px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .platform-content .container .facebook.wrapper {
+    overflow-x: hidden;
+  }
+  /* line 140, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .platform-content .container .facebook.wrapper .text-section {
+    margin-top: 55px;
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 536px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .platform-content .container .facebook.wrapper .text-section {
+    overflow-x: hidden;
+  }
+  /* line 145, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .platform-content .container .facebook.wrapper .image-section {
+    padding-left: 72px;
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 464px;
+    margin-top: 60px;
+    min-height: 1px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .platform-content .container .facebook.wrapper .image-section {
+    overflow-x: hidden;
+  }
+  /* line 150, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .platform-content .container .divider-wrapper {
+    margin-top: 100px;
+  }
+
+  /* line 156, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .gear-content .container .wrapper {
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 1148px;
+    padding-left: 72px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .gear-content .container .wrapper {
+    overflow-x: hidden;
+  }
+  /* line 160, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .gear-content .container .wrapper .text-section h5.header {
+    margin-top: 10px;
+  }
+  /* line 162, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .gear-content .container .wrapper .text-section .text.body {
+    margin-top: 40px;
+  }
+  /* line 164, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .gear-content .container .wrapper .text-section .section {
+    margin-top: 20px;
+  }
+  /* line 166, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .gear-content .container .clothes {
+    display: inline-block;
+    margin-top: 70px;
+  }
+  /* line 169, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .gear-content .container .clothes .shirts-left {
+    padding-left: 36px;
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 500px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .gear-content .container .clothes .shirts-left {
+    overflow-x: hidden;
+  }
+  /* line 173, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .gear-content .container .clothes .shirt-right {
+    padding-left: 216px;
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 500px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .gear-content .container .clothes .shirt-right {
+    overflow-x: hidden;
+  }
+  /* line 177, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .gear-content .container .divider-wrapper {
+    z-index: 10;
+    /* +prepend-top(100px) */
+  }
+
+  /* line 181, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .footer {
+    height: 130px;
+    position: relative;
+    margin-top: -5px;
+  }
+  /* line 185, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .footer .footer-divider {
+    height: 22px;
+    background-color: #4ab3d2;
+  }
+  /* line 188, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .footer .container {
+    padding-bottom: 10px;
+    position: relative;
+    top: 0px;
+  }
+  /* line 192, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .footer .container .wrapper.mochi-logo {
+    padding-left: 36px;
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 428px;
+    margin-top: 10px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .footer .container .wrapper.mochi-logo {
+    overflow-x: hidden;
+  }
+  /* line 196, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .footer .container .wrapper.mochi-logo .icon-mochi-pink-small {
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 104px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .footer .container .wrapper.mochi-logo .icon-mochi-pink-small {
+    overflow-x: hidden;
+  }
+  /* line 198, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .footer .container .wrapper.mochi-logo .mochi-text {
+    margin-top: 28px;
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 248px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .footer .container .wrapper.mochi-logo .mochi-text {
+    overflow-x: hidden;
+  }
+  /* line 201, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .footer .container .wrapper.wavedesign {
+    margin-top: 30px;
+    padding-left: 576px;
+  }
+  /* line 204, ../../../app/assets/stylesheets/page/layout.css.sass */
+  .footer .container .wrapper.wavedesign .icon-design-by-9wave {
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 212px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html .footer .container .wrapper.wavedesign .icon-design-by-9wave {
+    overflow-x: hidden;
+  }
+
+  /* line 21, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body > div3 {
+    width: inherit;
+  }
+  /* line 23, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .logo {
+    display: inline;
+  }
+  /* line 29, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .header .container .short-logo {
+    margin-top: 20px;
+    padding-left: 1054.8px;
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 212px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .content .header .container .short-logo {
+    overflow-x: hidden;
+  }
+  /* line 33, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .header .container .short-logo a {
+    display: inline-block;
+  }
+  /* line 37, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .header-content .container .message {
+    margin-top: 250px;
+    padding-left: 144px;
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 464px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .content .header-content .container .message {
+    overflow-x: hidden;
+  }
+  /* line 43, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .header-content .container .mochi-wrapper {
+    padding-left: 144px;
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 356px;
+    margin-top: 210px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .content .header-content .container .mochi-wrapper {
+    overflow-x: hidden;
+  }
+  /* line 48, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .header-content .container .mochi-wrapper .message {
+    text-align: center;
+    margin-top: 5px;
+    padding-left: 72px;
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 212px;
+    margin-right: 0;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .content .header-content .container .mochi-wrapper .message {
+    overflow-x: hidden;
+  }
+  /* line 54, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .content .header-content .container .divider-wrapper {
+    margin-top: 230px;
+  }
+  /* line 58, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .kickstarter-content .container .kickstarter {
+    padding-left: 72px;
+    margin-top: 50px;
+    margin-right: 0;
+  }
+  /* line 62, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .kickstarter-content .container .kickstarter .wrapper.message {
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 860px;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .kickstarter-content .container .kickstarter .wrapper.message {
+    overflow-x: hidden;
+  }
+  /* line 64, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .kickstarter-content .container .kickstarter .wrapper.message h3.header {
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 788px;
+    margin-right: 0;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .kickstarter-content .container .kickstarter .wrapper.message h3.header {
+    overflow-x: hidden;
+  }
+  /* line 67, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .kickstarter-content .container .kickstarter .wrapper.message .message {
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 788px;
+    margin-right: 0;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .kickstarter-content .container .kickstarter .wrapper.message .message {
+    overflow-x: hidden;
+  }
+  /* line 70, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .kickstarter-content .container .kickstarter .wrapper.widget {
+    margin-top: 40px;
+    display: inline;
+    float: left;
+    margin-right: 4px;
+    width: 284px;
+    margin-right: 0;
+  }
+  /* line 147, ../../../../../.rvm/gems/ruby-1.9.3-p429@MochiMochiWeb/gems/compass-0.12.2/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
+  * html body .kickstarter-content .container .kickstarter .wrapper.widget {
+    overflow-x: hidden;
+  }
+  /* line 74, ../../../app/assets/stylesheets/page/layout.css.sass */
+  body .kickstarter-content .container .kickstarter .wrapper.widget .kickstarter-widget {
+    height: 400px;
+    width: 220px;
+    background-color: #333333;
+  }
+}
+	/*
+ * This is a manifest file that'll be compiled into admin.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ * require_tree ./vendor
+
+ * require 'batch'
+ * require font-awesome
+*/
+
