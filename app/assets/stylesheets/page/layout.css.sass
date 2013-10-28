@@ -1,178 +1,205 @@
-/* =resize-transition-image
-/*   //+single-transition(all, 0.5s, false, false)
-/*   +transition-property(width, height)
-/*   +transition-duration(1s)
-/*   //x[ ease | linear | ease-in | ease-out | ease-in-out | cubic-bezier(x1, y1, x2, y2)
-/*   +transition-timing-function(ease-in)
-/*   //+transition-delay(0)
-/* =resize-transition-text
-/*   +transition-property(font-size)
-/*   +transition-duration(1s)
-/*   +transition-timing-function(ease-in)
-
-
-
-
-
-=logo-image
-  .circle
-    +circle(110px)
-    background-color: $Blue
-  .shape
-    display: inline-block
-    position: relative
-    left: 23px
-    bottom: -23px
-=logo-text
-  .text
-    position: relative
-    padding-left: 10px
-    top: 10px
-    display: inline-block
-    text-decoration: none
-=circle($pSize)
-  display: inline-block
-  width: $pSize
-  height: $pSize
-  border-radius: 50%
-
+body
+  $BackgroundColor: #F9F9F9
+  background-color: $BackgroundColor
 .container
+  background-color: white
   +container
+  +box-shadow(left rgba(gray, 0.4) 0 0 25px, rgba(gray, 0.2) 0 0 3px 1px inset)
+  +box-shadow(right rgba(gray, 0.4) 0 0 25px, rgba(gray, 0.2) 0 0 3px 1px inset)
+.wrapper
+  display: inline-block
 
-.circle-wrapper
-  +circle(265px)
-
-.background-light-gray
-  background-color: #333
-
-.background-whitish
-  background-color: #F9F9F9
+.new-section
+  +prepend-top(60px)
+  +prepend(2)
+  +column(33)
+.divider-wrapper
+  +column(36)
+  .icon-divider
+    width: inherit
 =layout
-  & > div
+  & > div3
     width: $BodyWidth
   .logo
     display: inline
 
   .content
-    .header-divider
-      height: 18px
-      background-color: $Id
     .header
       .container
-        +prepend-top($header-padding)
-        +append-bottom($header-padding)
-        .full-logo-wrapper
-          +prepend($LogoPrepend)
-          +column(8)
+        .short-logo
+          +prepend-top($ShortLogoTop)
+          +prepend($ShortLogoPrepend)
+          +column($ShortLogoColumn)
           a
             display: inline-block
-          /* .logo-wrapper
-            /* +logo-image
-            /* +logo-text
-        .location
-          +prepend-top(31px)
-          +prepend($LocationPrepend)
-          +column($LocationSize)
-          +last
-    .ideology
-      +prepend-top($IdeologyTop)
+    .header-content
       .container
-        .content
-          +column(32)
-          display: inline-block
-          +prepend($IdeologyPrepend)
-          ul.message
-            +prepend-top($MessageTop)
-            +column(8)
-          .map
-            /* position: relative
-            +prepend($MapPrepend)
-            +prepend-top($MapTop)
-            +column($MapSize)
+        .message
+          +prepend-top($HeaderContentPrependTop)
+          +prepend($HeaderContentPrepend)
+          +column($HeaderContentColumn)
+          .header
+          .body
+        .mochi-wrapper
+          +prepend($HCMochiWrapperPrepend)
+          +column($HCMochiWrapperColumn)
+          +prepend-top($HCMochiWrapperPrependTop)
+          .icon-mochi-pink
+          .message
+            text-align: center
+            +prepend-top($HCMochiWrapperMessagePrependTop)
+            +prepend($HCMochiWrapperMessagePrepend)
+            +column($HCMochiWrapperMessageColumn)
             +last
-            .icon-map
-            .map-pointer
-              position: relative
-              bottom: $MapPointerBottom
-              left: $MapPointerLeft
-              .icon-location-pointer
-                position: relative
-              a.contact
-                left: $ContactLeft
-                bottom: $ContactBottom
-                position: relative
-
-
-    .portfolio
-      .container
-        padding: 12px 0px
-        position: relative
-        h1.header
-          +prepend(13)
-        .projects
-          display: inline-block
-          +prepend($ProjectsPrepend)
-          .mochimochi
-            position: relative
-            .wrapper
-              position: relative
-              .logo
-                .icon-mochimochi-text
-                .message
-
-  .footer
-    border-top: 20px solid $Blue
-    background-color: white
-    height: 100px
-    .logo
-      +prepend-top($FooterLogoTop)
-      +prepend($FooterLogoPrepend)
-      +column($FooterLogoSize)
-      .icon-text-logo
-      display: inline-block
-
-
-
-
-  .projects
-    .project
-      +prepend-top(10px)
-      +column(28)
-      +last
-      .logo-link
-        position: relative
-        display: inline-block
-        +float-left
-        .logo
-          margin-top: -1px
-          z-index: 10
-          position: relative
-          display: inline-block
-      .content
-        position: relative
-        +prepend-top(1px)
+        .divider-wrapper
+          +prepend-top($HCDividerPrependTop)
+  .kickstarter-content
+    .container
+      .kickstarter
+        +prepend(2)
+        +prepend-top(50px)
+        +last
+        .wrapper.message
+          +column(24)
+          h3.header
+            +column(22)
+            +last
+          .message
+            +column(22)
+            +last
+        .wrapper.widget
+          +prepend-top(40px)
+          +column(8)
+          +last
+          .kickstarter-widget
+            height: 400px
+            width: 220px
+            background-color: #333
+.game-content
+  .container
+    .wrapper
+      position: relative
+      +column(25)
+      +prepend(5.5)
+      +prepend-top(20px)
+      +append-bottom(100px)
+      .video-container
+        padding: 20px
+        +single-box-shadow
         +border-radius(20px)
-        +pull($ContentPull)
-        +float-right
-        height: $ProjectHeight
+      .mask-wrapper
+        position: absolute
+        top: 0px
+        +opacity(0.6)
+        +column(25)
+        height: 520px
         background-color: white
-        +column($ContentSize)
+        +border-radius(20px)
+      h1
+        position: absolute
+        top: 0px
+        +opacity(0.8)
+        color: #FFF
+        +prepend(7)
+        +prepend-top(250px)
+        +rotate(-28deg)
+
+.platform-content
+  .container
+    .header.wrapper.new-section
+    .android.wrapper
+      +column(32)
+      +prepend(3)
+      +prepend-top(75px)
+      .text-section
+        +prepend-top(50px)
+        +column(15)
         .header
-          +prepend($HeaderPrepend)
-          +column(15)
-        .description
-          +prepend($HeaderPrepend)
-          +column(15)
-        .links
-          position: absolute
-          right: 20px
-          bottom: 0px
-          /* +prepend(4)
-          /* +column(15)
-          .link
-            +float-left
-            .info
-              +float-left
-            .url
-              padding-left: 5px
-              +float-right
+        .body
+      .image-section
+        +prepend(2)
+        +column(13)
+        min-height: 1px
+    .iphone.wrapper
+      +column(32)
+      +prepend(3)
+      +prepend-top(50px)
+      .image-section
+        +column(15)
+        min-height: 1px
+      .text-section
+        +prepend-top(60px)
+        +column(15)
+        min-height: 1px
+        .header
+        .body
+    .facebook.wrapper
+      +column(32)
+      +prepend(3)
+      +prepend-top(40px)
+      .text-section
+        +prepend-top(55px)
+        +column(15)
+        .header
+        .body
+      .image-section
+        +prepend(2)
+        +column(13)
+        +prepend-top(60px)
+        min-height: 1px
+    .divider-wrapper
+      +prepend-top(100px)
+
+.gear-content
+  .container
+    .header
+    .wrapper
+      +column(32)
+      +prepend(2)
+      .text-section
+        h5.header
+          +prepend-top(10px)
+        .text.body
+          +prepend-top(40px)
+        .section
+          +prepend-top(20px)
+    .clothes
+      display: inline-block
+      +prepend-top(70px)
+      .shirts-left
+        +prepend(1)
+        +column(14)
+        .icon-pink-green-shirts
+      .shirt-right
+        +prepend(6)
+        +column(14)
+        .icon-pink-blue-shirts
+    .divider-wrapper
+      z-index: 10
+      /* +prepend-top(100px)
+
+.footer
+  height: 130px
+  position: relative
+  margin-top: -5px
+  .footer-divider
+    height: 22px
+    background-color: $Blue
+  .container
+    padding-bottom: 10px
+    position: relative
+    top: 0px
+    .wrapper.mochi-logo
+      +prepend(1)
+      +column(12)
+      +prepend-top(10px)
+      .icon-mochi-pink-small
+        +column(3)
+      .mochi-text
+        +prepend-top(28px)
+        +column(7)
+    .wrapper.wavedesign
+      +prepend-top(30px)
+      +prepend(16)
+      .icon-design-by-9wave
+        +column(6)
