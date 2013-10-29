@@ -10,13 +10,17 @@ body
   display: inline-block
 
 .new-section
-  +prepend-top(60px)
-  +prepend(2)
-  +column(33)
+  +prepend-top($NewSectionTop)
+  +prepend($NewSectionPrepend)
+  +column($NewSectionColumn)
 .divider-wrapper
-  +column(36)
+  +column($DividerWrapperColumn)
   .icon-divider
     width: inherit
+
+.section
+  +append-bottom($SectionBottom)
+
 =layout
   & > div3
     width: $BodyWidth
@@ -56,150 +60,151 @@ body
   .kickstarter-content
     .container
       .kickstarter
-        +prepend(2)
-        +prepend-top(50px)
+        +prepend($KickstarterPrepend)
+        +prepend-top($KickstarterTop)
         +last
         .wrapper.message
-          +column(24)
+          +column($KickstarterMessageColumn)
           h3.header
-            +column(22)
+            +column($KMHeaderColumn)
             +last
           .message
-            +column(22)
+            +column($KMMessageColumn)
             +last
         .wrapper.widget
-          +prepend-top(40px)
-          +column(8)
+          +prepend-top($KWidgetTop)
+          +column($KWidgetColumn)
           +last
           .kickstarter-widget
-            height: 400px
-            width: 220px
+            height: $KWWHeight
+            width: $KWWWidth
             background-color: #333
 .game-content
   .container
     .wrapper
       position: relative
-      +column(25)
-      +prepend(5.5)
-      +prepend-top(20px)
-      +append-bottom(100px)
+      +column($GCWColumn)
+      +prepend($GCWPrepend)
+      +prepend-top($GCWTop)
+      +append-bottom($GCWBottom)
       .video-container
-        padding: 20px
+        padding: $GCWVideoPadding
         +single-box-shadow
-        +border-radius(20px)
+        +border-radius($GCWVideoRadius)
       .mask-wrapper
         position: absolute
-        top: 0px
+        top: $GCWMaskTop
         +opacity(0.6)
-        +column(25)
-        height: 520px
+        +column($GCWMaskColumn)
+        height: $GCWMaskHeight
         background-color: white
-        +border-radius(20px)
+        +border-radius($GCWMaskRadius)
       h1
         position: absolute
         top: 0px
         +opacity(0.8)
         color: #FFF
-        +prepend(7)
-        +prepend-top(250px)
+        +prepend($GCWTextPrepend)
+        +prepend-top($GCWTextTop)
         +rotate(-28deg)
 
 .platform-content
   .container
     .header.wrapper.new-section
     .android.wrapper
-      +column(32)
-      +prepend(3)
-      +prepend-top(75px)
+      +column($PCAndroidColumn)
+      +prepend($PCAndroidPrepend)
+      +prepend-top($PCAndroidTop)
       .text-section
-        +prepend-top(50px)
-        +column(15)
+        +prepend-top($PCATextTop)
+        +column($PCATextColumn)
         .header
         .body
       .image-section
-        +prepend(2)
-        +column(13)
+        +prepend($PCATImagePrepend)
+        +column($PCATImageColumn)
         min-height: 1px
     .iphone.wrapper
-      +column(32)
-      +prepend(3)
-      +prepend-top(50px)
+      +column($PCIphoneColumn)
+      +prepend($PCIphonePrepend)
+      +prepend-top($PCIphoneTop)
       .image-section
-        +column(15)
+        +prepend-top($PCIImageTop)
+        +column($PCIImageColumn)
         min-height: 1px
       .text-section
-        +prepend-top(60px)
-        +column(15)
+        +prepend-top($PCIITextTop)
+        +column($PCIITextColumn)
         min-height: 1px
         .header
         .body
     .facebook.wrapper
-      +column(32)
-      +prepend(3)
-      +prepend-top(40px)
+      +column($PCFacebookColumn)
+      +prepend($PCFacebookPrepend)
+      +prepend-top($PCFacebookTop)
       .text-section
-        +prepend-top(55px)
-        +column(15)
+        +prepend-top($PCFTextTop)
+        +column($PCFTextColumn)
         .header
         .body
       .image-section
-        +prepend(2)
-        +column(13)
-        +prepend-top(60px)
+        +prepend($PCFImagePrepend)
+        +column($PCFImageColumn)
+        +prepend-top($PCFImageTop)
         min-height: 1px
     .divider-wrapper
-      +prepend-top(100px)
+      +prepend-top($PCDividerTop)
 
 .gear-content
   .container
     .header
     .wrapper
-      +column(32)
-      +prepend(2)
+      +column($GCWrapperColumn)
+      +prepend($GCWrapperPrepend)
       .text-section
         h5.header
-          +prepend-top(10px)
+          +prepend-top($GCWTextHeaderTop)
         .text.body
-          +prepend-top(40px)
+          +prepend-top($GCWTextBodyTop)
         .section
-          +prepend-top(20px)
+          +prepend-top($GCWTextSectionTop)
     .clothes
       display: inline-block
-      +prepend-top(70px)
+      +prepend-top($GCClothesTop)
       .shirts-left
-        +prepend(1)
-        +column(14)
+        +prepend($GCCShirtLeftPrepend)
+        +column($GCCShirtLeftColumn)
         .icon-pink-green-shirts
       .shirt-right
-        +prepend(6)
-        +column(14)
+        +prepend($GCCShirtRightPrepend)
+        +column($GCCShirtLeftColumn)
         .icon-pink-blue-shirts
     .divider-wrapper
       z-index: 10
       /* +prepend-top(100px)
 
 .footer
-  height: 130px
+  height: $FooterHeight
   position: relative
-  margin-top: -5px
+  margin-top: $FooterMarginTop
   .footer-divider
-    height: 22px
+    height: $FDividerHeight
     background-color: $Blue
   .container
-    padding-bottom: 10px
+    padding-bottom: $FDContainerBottom
     position: relative
     top: 0px
     .wrapper.mochi-logo
-      +prepend(1)
-      +column(12)
-      +prepend-top(10px)
+      +prepend($FDCMochiLogoPrepend)
+      +column($FDCMochiLogoColumn)
+      +prepend-top($FDCMochiLogoTop)
       .icon-mochi-pink-small
-        +column(3)
+        +column($FDCMochiPinkColumn)
       .mochi-text
-        +prepend-top(28px)
-        +column(7)
+        +prepend-top($FDCMochiTextTop)
+        +column($FDCMochiTextColumn)
     .wrapper.wavedesign
-      +prepend-top(30px)
-      +prepend(16)
+      +prepend-top($FDCMochiDesignTop)
+      +prepend($FDCMochiDesignPrepend)
       .icon-design-by-9wave
-        +column(6)
+        +column($FDCDesignByColumn)
