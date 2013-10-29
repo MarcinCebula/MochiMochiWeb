@@ -83,8 +83,8 @@ utils/sidemenu_background.png: utils/sidemenu_background-1add9f0836437e381edf4a8
 utils/sidemenu_background/index.png: utils/sidemenu_background-1add9f0836437e381edf4a8a30a5e015.png
 application.js: application-85fa0c6829b32fa9d3a9932efb4325c7.js
 application/index.js: application-85fa0c6829b32fa9d3a9932efb4325c7.js
-page.css: page-c4fe1b13786e3b6802bf3e18f0d89b97.css
-page/index.css: page-c4fe1b13786e3b6802bf3e18f0d89b97.css
+page.css: page-6f1f46f17831f47bb0e09e1198ef6b2b.css
+page/index.css: page-6f1f46f17831f47bb0e09e1198ef6b2b.css
 FontAwesome.otf: FontAwesome-d2e1f2cb067bb8a9b129341f5ed85582.otf
 FontAwesome/index.otf: FontAwesome-d2e1f2cb067bb8a9b129341f5ed85582.otf
 fontawesome-webfont.eot: fontawesome-webfont-009f6d1f667cc42c25e712ab3429cbc7.eot
