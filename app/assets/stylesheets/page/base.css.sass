@@ -10,42 +10,34 @@
 @import ./media_query_defaults
 @import ./sprites
 
-/* @media screen and (min-width: 0px)
-/*   +pixels1280
-/*   @import ./layout
-/*   body
-/*     +layout
-
-/* @media screen and (min-width: 0px)
-/*   +grid-config(32, 26px, 4px)
-/*   +generate-index-icons(1)
-/*   @import ./local_defaults/0_defaults
-/*   @import ./layout
-/*   body
-/*     +layout
+@media screen and (min-width: 0px)
+  +grid-config(36, 24px, 2px)
+  +generate-index-icons(0.65)
+  @import ./local_defaults/0_defaults
+  @import ./layout
+  body
+    +layout
 
 
-/* @media screen and (min-width: 968px)
-/*   +grid-config(32, 28px, 2px)
-/*   +generate-index-sprites( 1024px / 1.2, 794px / 1.2)
-/*   $Id: $Blue
-/*   @import ./local_defaults/968_defaults
-/*   @import ./layout
-/*   body
-/*     +layout
+@media screen and (min-width: 968px)
+  +grid-config(36, 28px, 2px)
+  +generate-index-icons(0.75)
+  @import ./local_defaults/968_defaults
+  @import ./layout
+  body
+    +layout
 
-/* @media screen and (min-width: 1180px)
-/*   +grid-config(32, 34px, 3px)
-/*   +generate-index-sprites( 1024px / 1.1, 794px / 1.1)
-/*   $Id: $Blue
-/*   @import ./local_defaults/1180_defaults
-/*   @import ./layout
-/*   body
-/*     +layout
+@media screen and (min-width: 1180px)
+  +grid-config(36, 29px, 3px)
+  +generate-index-icons(0.8)
+  @import ./local_defaults/1180_defaults
+  @import ./layout
+  body
+    +layout
 
-@media screen and (min-width: 1340px)
+@media screen and (min-width: 1367px)
   +grid-config(36, 32px, 4px)
-  +generate-index-icons(0.95)
+  +generate-index-icons(0.9)
   @import ./local_defaults/1340_defaults
   @import ./layout
   body
