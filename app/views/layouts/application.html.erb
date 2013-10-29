@@ -14,12 +14,16 @@
 
     	<%= javascript_include_tag "utils/google_analytics" if Rails.env.production? %>
     	<%= javascript_include_tag "utils/google_analytics_local" if Rails.env.development? %>
-      <% if mobile_device? %>
+
+
+      <% if (mobile_device? && false) %>
         <%= stylesheet_link_tag "page-mobile", :media => "all" %>
       <% else %>
         <%= stylesheet_link_tag "page", :media => "all" %>
       <% end %>
 	  <% end %>
+
+
     <%= airbrake_javascript_notifier %>
     <%= csrf_meta_tags %>
   </head>
